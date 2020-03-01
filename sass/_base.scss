@@ -1,1 +1,13 @@
 /* base styles */
+
+.btn-lp {
+  color: $second-color;
+  border-color: $btn-color;
+  background-color: $btn-color;
+
+  &:hover {
+    color: $second-color;
+    border-color: darken($btn-color, 10%);
+    background-color: darken($btn-color, 10%);
+  }
+}
