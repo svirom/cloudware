@@ -19,40 +19,91 @@
   <body>
     
     <!-- header navigation -->
-    <header class="main-header">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo.png" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="main-menu">
-          <ul class="navbar-nav ml-auto header-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Terms & Conditions</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Documentation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQs</a>
-            </li>
-          </ul>
-          <div class="navbar-login">
-            <a href="#" class="btn btn-lp">Sign Up</a>
-            <a href="#" class="btn btn-link">Login</a>
+    <header class="container-xl main-header">
+      <div class="row">
+        <nav class="col navbar navbar-expand-xl px-xl-0">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo">
+          </a>
+          <!-- <span href="#" class="nav-opener"><span></span></a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="nav-opener"><span></span></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto header-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Terms & Conditions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Documentation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQs</a>
+              </li>
+            </ul>
+            <div class="navbar-login ml-4 my-4 my-xl-0">
+              <a href="#" class="btn btn-lp mr-4">Sign Up</a>
+              <a href="#" class="btn btn-link">Login</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <div class="hero-section">
+      <img src="img/hero-left1-bkgr.png" alt="Image" class="hero-image-1">
+      <div class="container-fluid px-0">
+        <div class="row no-gutters">
+          <div class="col text-center">
+            <div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+              <ol class="carousel-indicators d-inline-block">
+                <li data-target="#carousel-hero" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-hero" data-slide-to="1"></li>
+                <li data-target="#carousel-hero" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-item-content d-flex align-items-center flex-column">
+                    <ul class="d-flex hero-list">
+                      <li><img src="img/hero-azure.png" alt="Azure"></li>
+                      <li><img src="img/hero-aws.png" alt="AWS"></li>
+                      <li><img src="img/hero-googlecloud.png" alt="Google Cloud"></li>
+                    </ul>
+                    <h1>Fuel Growh With Saving On Cloud Costs</h1>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore. </p>
+                    <div class="hero-btn">
+                      <a href="#" class="btn btn-lp">Start Your 7-Day Free Trial</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-item-content d-flex align-items-center flex-column">
+                    <p class="h1">Fuel Growh With Saving On Cloud Costs 2</p>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore. </p>
+                    <div class="hero-btn">
+                      <a href="#" class="btn btn-lp">Start Your 7-Day Free Trial</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex align-items-center flex-column">
+                    <p class="h1">Fuel Growh With Saving On Cloud Costs 3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </div>
     
 
     <!-- Optional JavaScript -->

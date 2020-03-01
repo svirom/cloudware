@@ -1,0 +1,78 @@
+/* hero section */
+.hero-section {
+  position: relative;
+  padding-bottom: 5rem;
+  /* background: url('../img/hero-left1-bkgr.png') left bottom -3rem no-repeat, 
+                url('../img/hero-left2-bkgr.png') left 200px bottom 120px no-repeat,
+                url('../img/hero-right-bkgr.png') right bottom no-repeat; */
+
+  .carousel {
+    height: 600px;
+    /* background: url('../img/hero-left1-bkgr.png') left bottom -3rem no-repeat, 
+                url('../img/hero-left2-bkgr.png') left 200px bottom 120px no-repeat,
+                url('../img/hero-right-bkgr.png') right bottom no-repeat,
+                linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EFF2F4; */
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EFF2F4;
+  }
+  .carousel-item {
+    height: 600px;
+
+    &.active {
+      @include transition(all, 0.5s);
+    }
+  }
+  .carousel-item-content {
+    height: 100%;
+
+    h1 {
+      max-width: 680px;
+    }
+    .subtitle {
+      max-width: 485px;
+      margin-top: 1.5rem;
+    }
+  }
+  .carousel-indicators {
+    bottom: -10px;
+
+    li {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      margin-left: 6px;
+      margin-right: 6px;
+      border-radius: 50%;
+      border: 1px solid $main-color;
+      box-shadow: -8px -8px 20px #FFFFFF, 8px 8px 20px #D1D9E6;
+      opacity: 1;
+      vertical-align: middle;
+
+      &.active {
+        width: 18px;
+        height: 18px;
+        margin-left: 4px;
+        margin-right: 4px;
+        border: 1px solid $btn-color;
+        background: #11A088;
+      }
+    }
+  }
+}
+.hero-list {
+  margin-top: 5rem;
+  margin-bottom: 3.75rem;
+
+  li {
+    margin-left: 1.625rem;
+    margin-right: 1.625rem;
+  }
+}
+.hero-btn {
+  margin-top: 3.75rem;
+}
+.hero-image-1 {
+  position: absolute;
+  left: 1rem;
+  bottom: 3.25rem;
+  z-index: 1000;
+}

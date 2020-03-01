@@ -1,9 +1,9 @@
 // breakpoints
 $breakpoints: (
-  'small': (max-width: 575px),
-  'medium': (max-width: 767px),
-  'large': (max-width: 991px),
-  'extralarge': (max-width: 1199px)
+  'sm': (max-width: 575px),
+  'md': (max-width: 767px),
+  'lg': (max-width: 991px),
+  'xl': (max-width: 1199px)
 ) !default;
 
 // used fonts
