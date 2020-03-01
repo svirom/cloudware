@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AGAA,gBAAgB;AAChB,AAAA,IAAI,CAAC;EACH,WAAW,EFOD,YAAY,EAAE,UAAU;EENlC,KAAK,EFSM,OAAO;CERnB;;AAED,AAAA,EAAE,EAAE,GAAG,CAAC;EACN,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,GAAG;CACjB;;AACD,AAAA,EAAE,CAAC;EACD,SAAS,EAAE,OAAO;EAClB,WAAW,EAAE,GAAG;CACjB;;ACbD,iBAAiB;ACAjB,gBAAgB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/_variables.scss",
+        "../sass/_mixins.scss",
+        "../sass/_typography.scss",
+        "../sass/_base.scss",
+        "../sass/_navigation.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

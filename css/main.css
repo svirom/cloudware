@@ -1,0 +1,19 @@
+/* typography */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #31456A;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+/* base styles */
+/* navigation */
+/*# sourceMappingURL=main.css.map */
