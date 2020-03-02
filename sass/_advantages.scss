@@ -1,0 +1,21 @@
+/* advantages section */
+.advantages {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+.advantages-card {
+  border: none;
+
+  @include respond-to('lg') {
+    height: auto;
+    margin-top: 4rem;
+  }
+
+  h3 {
+    margin-top: 3rem;
+
+    @include respond-to('lg') {
+      margin-top: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+/* features section */
+.features {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+
+  @include respond-to('md') {
+    padding-top: 0;
+  }
+}
+.features-card {
+  height: auto;
+  min-height: 25rem;
+  margin-bottom: 30px;
+  padding-top: 4.25rem;
+  padding-bottom: 1rem;
+  border: none;
+  border-radius: 1rem;
+  @include transition(all, 0.3s);
+
+  @include respond-to('sm') {
+    min-height: auto;
+  }
+
+  img {
+    max-width: 100px;
+  }
+  h3 {
+    margin-top: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .card-body {
+    padding-top: 0.75rem;
+    padding-bottom: 0;
+
+    @include respond-to('sm') {
+      padding-bottom: 2.25rem;
+    }
+  }
+  .card-text {
+    @include font(0.875rem, 400, 1.785);
+  }
+
+  &:hover {
+    cursor: pointer;
+    // background: $main-color;
+    background: linear-gradient(180deg, $main-color 0%, #182642 100%), $main-color;
+
+    h3,
+    .card-text {
+      color: $second-color;
+    }
+  }
+}

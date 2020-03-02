@@ -1,0 +1,60 @@
+/* how-it-works section */
+.how-it-works {
+  position: relative;
+  padding-top: 4.75rem;
+  padding-bottom: 6rem;
+  background: #1B2A45;
+
+  @include respond-to('md') {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  h2 {
+    color: $second-color;
+  }
+  .card {
+    background: transparent;
+  }
+}
+.how-card {
+  border: none;
+
+  @include respond-to('lg') {
+    margin-top: 2rem;
+  }
+
+  h3 {
+    margin-top: 2.5rem;
+    color: $second-color;
+    font-weight: 500;
+
+    @include respond-to('lg') {
+      margin-top: 1.5rem;
+    }
+  }
+  sup {
+    top: -0.75rem;
+    right: 0.35rem;
+    @include font(1.25rem, 600, 1.2);
+    color: rgba(255, 255, 255, 0.2);
+
+    &.active {
+      color: #11A088;
+    }
+  }
+  img {
+    max-width: 220px;
+  }
+}
+.advantages-btn {
+  position: absolute;
+  width: 100%;
+  bottom: -28px;
+  left: 50%;
+  @include transform(translateX(-50%));
+
+  @include respond-to('sm') {
+    bottom: -23px;
+  }
+}

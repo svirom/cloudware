@@ -2,16 +2,9 @@
 .hero-section {
   position: relative;
   padding-bottom: 5rem;
-  /* background: url('../img/hero-left1-bkgr.png') left bottom -3rem no-repeat, 
-                url('../img/hero-left2-bkgr.png') left 200px bottom 120px no-repeat,
-                url('../img/hero-right-bkgr.png') right bottom no-repeat; */
 
   .carousel {
-    height: 600px;
-    /* background: url('../img/hero-left1-bkgr.png') left bottom -3rem no-repeat, 
-                url('../img/hero-left2-bkgr.png') left 200px bottom 120px no-repeat,
-                url('../img/hero-right-bkgr.png') right bottom no-repeat,
-                linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EFF2F4; */
+    // height: 600px;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EFF2F4;
   }
   .carousel-item {
@@ -23,13 +16,24 @@
   }
   .carousel-item-content {
     height: 100%;
+    padding-top: 5rem;
 
     h1 {
       max-width: 680px;
+
+      @include respond-to('sm') {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
     }
     .subtitle {
       max-width: 485px;
       margin-top: 1.5rem;
+
+      @include respond-to('sm') {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
     }
   }
   .carousel-indicators {
@@ -59,20 +63,69 @@
   }
 }
 .hero-list {
-  margin-top: 5rem;
+  // margin-top: 5rem;
   margin-bottom: 3.75rem;
 
   li {
     margin-left: 1.625rem;
     margin-right: 1.625rem;
+
+    @include respond-to('sm') {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
   }
 }
 .hero-btn {
-  margin-top: 3.75rem;
+  margin-top: 3rem;
+
+  @include respond-to('sm') {
+    margin-top: 1.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* .btn-lp {
+    padding: 1.032rem 2.625rem;
+    border-radius: 16px;
+    @include font(1.125rem, 600, 1.22);
+
+    @include respond-to('sm') {
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+    }
+  } */
 }
-.hero-image-1 {
+.hero-images {
   position: absolute;
-  left: 1rem;
-  bottom: 3.25rem;
-  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+
+  img {
+    position: absolute;
+  }
+  .hero-image-left {
+    left: 0;
+    bottom: 3.25rem;
+
+    @include respond-to('xl') {
+      width: 25%;
+    }
+    @include respond-to('md') {
+      display: none;
+    }
+  }
+  .hero-image-right {
+    right: 0;
+    bottom: 0.75rem;
+
+    @include respond-to('xl') {
+      width: 45%;
+    }
+    @include respond-to('md') {
+      display: none;
+    }
+  }
 }

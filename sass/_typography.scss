@@ -6,9 +6,17 @@ body {
 
 h1, .h1 {
   @include font(2.5rem, 800, 1.35);
+
+  @include respond-to('sm') {
+    font-size: 2rem;
+  }
 }
 h2 {
   @include font(2.25rem, 800, 1.2);
+
+  @include respond-to('sm') {
+    font-size: 1.75rem;
+  }
 }
 h3 {
   @include font(1.25rem, 700, 1.2);
