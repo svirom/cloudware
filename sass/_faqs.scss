@@ -1,0 +1,24 @@
+/* FAQs section */
+.faqs {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+
+  @include respond-to('xl') {
+    padding-top: 4.5rem;
+  }
+  @include respond-to('lg') {
+    padding-top: 2rem;
+  }
+}
+.faqs-questions {
+  max-width: 570px;
+
+  @include respond-to('lg') {
+    text-align: center;
+  }
+}
+.faqs-question {
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+}

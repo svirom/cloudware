@@ -2,6 +2,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #31456A;
+  overflow-x: hidden;
 }
 
 h1, .h1 {
@@ -34,6 +35,16 @@ h3 {
   line-height: 1.2;
 }
 
+h3.prices-title {
+  font-size: 1.5625rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h3.prices-title.prices-business-title {
+  color: #F47960;
+}
+
 .subtitle {
   font-size: 1.125rem;
   font-weight: 400;
@@ -50,6 +61,7 @@ li {
 }
 
 .btn-lp {
+  font-weight: 600;
   color: #ffffff;
   border-color: #12AF96;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25), inset 1px 1px 8px #12AF96;
@@ -76,6 +88,22 @@ li {
     padding: 0.75rem 2rem;
     font-size: 1rem;
   }
+}
+
+.btn-lp.btn-prices {
+  padding: 0.8125rem 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.0625;
+  border-radius: 10px;
+}
+
+.btn-lp.btn-business-prices {
+  padding: 0.688rem 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.0625;
+  border-radius: 10px;
 }
 
 /* navigation */
@@ -303,16 +331,6 @@ li {
 
 .hero-btn {
   margin-top: 3rem;
-  /* .btn-lp {
-    padding: 1.032rem 2.625rem;
-    border-radius: 16px;
-    @include font(1.125rem, 600, 1.22);
-
-    @include respond-to('sm') {
-      padding: 0.75rem 2rem;
-      font-size: 1rem;
-    }
-  } */
 }
 
 @media (max-width: 575px) {
@@ -543,24 +561,200 @@ li {
 
 /* prices section */
 .prices {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 14rem;
+  padding-bottom: 5rem;
+  background: #ffffff url("../img/prices-bkgr.png") right 24px bottom 24px no-repeat;
+}
+
+@media (max-width: 1199px) {
+  .prices {
+    padding-top: 10rem;
+    background-position: center bottom;
+  }
+}
+
+@media (max-width: 991px) {
+  .prices {
+    padding-top: 7rem;
+    background-position: center;
+  }
 }
 
 .prices-card {
-  position: relative;
+  border: 1px solid #D1D9E6;
+  border-radius: 1.25rem;
+  background: #ffffff;
 }
 
-.prices-badge {
+.prices-card::before {
   position: absolute;
   left: 0;
-  bottom: 0;
-  width: 80%;
+  bottom: 50%;
+  width: 340px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #ffffff;
+  text-align: center;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  -webkit-transform: rotate(270deg) translateX(-50%);
+  transform: rotate(270deg) translateX(-50%);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+}
+
+@media (max-width: 575px) {
+  .prices-card::before {
+    top: -40px;
+    bottom: auto;
+    width: 100%;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.prices-card::after {
+  position: absolute;
+}
+
+.prices-card.prices-trial-card::before {
+  content: 'Free /  7-Day Trial';
   background: #31456A;
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+}
+
+.prices-card.prices-trial-card::after {
+  content: url("../img/prices-card-left.png");
+  left: -235px;
+  bottom: 0;
+}
+
+@media (max-width: 1199px) {
+  .prices-card.prices-trial-card::after {
+    content: '';
+  }
+}
+
+.prices-card.prices-business-card {
+  margin-left: 4rem;
+}
+
+@media (max-width: 991px) {
+  .prices-card.prices-business-card {
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+}
+
+.prices-card.prices-business-card::before {
+  content: '$ 2.99 / per instance per month';
+  background: #F47960;
+}
+
+.prices-card.prices-business-card::after {
+  content: url("../img/prices-card-right.png");
+  right: -260px;
+  bottom: -100px;
+}
+
+@media (max-width: 1199px) {
+  .prices-card.prices-business-card::after {
+    content: '';
+  }
+}
+
+.prices-card .card-body {
+  padding: 40px 50px;
+}
+
+@media (max-width: 575px) {
+  .prices-card .card-body {
+    padding: 40px 20px;
+  }
+}
+
+.prices-list {
+  padding-top: 1.25rem;
+  padding-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.5;
+}
+
+.prices-list li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.prices-list li::before {
+  position: absolute;
+  content: ' ';
+  left: 0;
+  top: 50%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #11A088;
+}
+
+.prices-btn-left {
+  padding-top: 2px;
+}
+
+.prices-btn-small {
+  padding-left: 5px;
+  font-size: 0.5625rem;
+}
+
+.prices-business::after {
+  position: absolute;
+  content: 'Prices are in USD and exclude 10% Tax';
+  bottom: -28px;
+  left: 5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.0625;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .prices-business::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+/* FAQs section */
+.faqs {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 1199px) {
+  .faqs {
+    padding-top: 4.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .faqs {
+    padding-top: 2rem;
+  }
+}
+
+.faqs-questions {
+  max-width: 570px;
+}
+
+@media (max-width: 991px) {
+  .faqs-questions {
+    text-align: center;
+  }
+}
+
+.faqs-question h3 {
+  margin-bottom: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

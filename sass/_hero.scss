@@ -57,7 +57,7 @@
         margin-left: 4px;
         margin-right: 4px;
         border: 1px solid $btn-color;
-        background: #11A088;
+        background: $active-color;
       }
     }
   }
@@ -84,17 +84,6 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
-
-  /* .btn-lp {
-    padding: 1.032rem 2.625rem;
-    border-radius: 16px;
-    @include font(1.125rem, 600, 1.22);
-
-    @include respond-to('sm') {
-      padding: 0.75rem 2rem;
-      font-size: 1rem;
-    }
-  } */
 }
 .hero-images {
   position: absolute;

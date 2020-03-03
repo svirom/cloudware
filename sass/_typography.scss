@@ -2,6 +2,7 @@
 body {
   font-family: $main-font;
   color: $main-color;
+  overflow-x: hidden;
 }
 
 h1, .h1 {
@@ -20,6 +21,14 @@ h2 {
 }
 h3 {
   @include font(1.25rem, 700, 1.2);
+
+  &.prices-title {
+    @include font(1.5625rem, 500, 1.2);
+
+    &.prices-business-title {
+      color: #F47960;
+    }
+  }
 }
 .subtitle {
   @include font(1.125rem, 400, 1.83);
