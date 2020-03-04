@@ -45,6 +45,13 @@ h3.prices-title.prices-business-title {
   color: #F47960;
 }
 
+h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
 .subtitle {
   font-size: 1.125rem;
   font-weight: 400;
@@ -222,6 +229,8 @@ li {
     top: 90px;
     left: 0px;
     width: 100%;
+    -webkit-box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.15);
     background: #F5F6F6;
     z-index: 10000;
   }
@@ -1071,7 +1080,7 @@ li {
 /* footer (incl get-in-touch) */
 .main-footer {
   padding-top: 6rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0))), #EFF2F4;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EFF2F4;
 }
@@ -1159,4 +1168,58 @@ li {
 }
 
 /* footer widgets */
+.footer-widgets {
+  padding-top: 4.5rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.93;
+}
+
+@media (max-width: 767px) {
+  .footer-widgets {
+    padding-top: 2.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-widgets {
+    text-align: center;
+  }
+}
+
+.logo-footer img {
+  max-width: 93px;
+}
+
+.widget .widget-par {
+  font-weight: 500;
+}
+
+.widget-list li {
+  margin-bottom: 0.25rem;
+}
+
+.widget-list li:last-child {
+  margin-bottom: 0;
+}
+
+.widget-list a {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.93;
+  color: #31456A;
+}
+
+@media (max-width: 575px) {
+  .copyright {
+    text-align: center;
+  }
+}
+
+.copyright p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 2.36;
+  color: rgba(49, 69, 106, 0.5);
+}
 /*# sourceMappingURL=main.css.map */

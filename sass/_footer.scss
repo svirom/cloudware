@@ -1,7 +1,7 @@
 /* footer (incl get-in-touch) */
 .main-footer {
   padding-top: 6rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EFF2F4;
 
   h2 {
@@ -84,3 +84,47 @@
 }
 
 /* footer widgets */
+.footer-widgets {
+  padding-top: 4.5rem;
+  @include font(0.875rem, 400, 1.93);
+
+  @include respond-to('md') {
+    padding-top: 2.5rem;
+  }
+  @include respond-to('sm') {
+    text-align: center;
+  }
+}
+.logo-footer {
+  img {
+    max-width: 93px;
+  }
+}
+.widget {
+  .widget-par {
+    font-weight: 500;
+  }
+}
+.widget-list {
+  li {
+    margin-bottom: 0.25rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    @include font(0.875rem, 400, 1.93);
+    color: $main-color;
+  }
+}
+.copyright {
+  @include respond-to('sm') {
+    text-align: center;
+  }
+  p {
+    @include font(0.875rem, 400, 2.36);
+    color: rgba($main-color, 0.5);
+  }
+}
