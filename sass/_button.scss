@@ -1,0 +1,93 @@
+/* base & button styles */
+ol, 
+ul, 
+li { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0;
+}
+
+.btn-lp {
+  font-weight: 600;
+  color: $second-color;
+  border-color: $btn-color;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25), inset 1px 1px 8px $btn-color;
+  background-color: $btn-color;
+
+  &:hover {
+    color: $second-color;
+    border-color: darken($btn-color, 10%);
+    background-color: darken($btn-color, 10%);
+  }
+
+  &.btn-trial {
+    padding: 1.032rem 2.625rem;
+    border-radius: 16px;
+    @include font(1.125rem, 600, 1.22);
+
+    @include respond-to('sm') {
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+    }
+  }
+
+  &.btn-prices {
+    padding: 0.8125rem 1.75rem;
+    @include font(0.875rem, 600, 1.0625);
+    border-radius: 10px;
+  }
+
+  &.btn-business-prices {
+    padding: 0.688rem 1.75rem;
+    @include font(0.875rem, 400, 1.0625);
+    border-radius: 10px;
+  }
+}
+
+.btn-calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 50%;
+
+  &.btn-calc-close {
+    width: 2rem;
+    height: 2rem;
+    background: #FF5D17;
+    @include transform(rotate(45deg));
+
+    &:hover {
+      background: darken(#FF5D17, 10%);
+    }
+  }
+  &.btn-calc-add {
+    width: 2.875rem;
+    height: 2.875rem;
+    background: $active-color;
+
+    &:hover {
+      background: darken($active-color, 10%);
+    }
+  }
+}
+
+.btn-contact {
+  padding: 1.032rem 5.125rem;
+  @include font(1.125rem, 600, 1.22);
+  color: $second-color;
+  box-shadow: 10px 4px 24px rgba(169, 156, 156, 0.25);
+  border-radius: 16px;
+  background: $main-color;
+
+  @include respond-to('sm') {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
+
+  &:hover {
+    color: $second-color;
+    border-color: darken($main-color, 10%);
+    background-color: darken($main-color, 10%);
+  }
+}

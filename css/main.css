@@ -51,7 +51,26 @@ h3.prices-title.prices-business-title {
   line-height: 1.83;
 }
 
-/* base styles */
+label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+@media (max-width: 1199px) {
+  label {
+    font-size: 1rem;
+  }
+}
+
+.contact-subtitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.22;
+  color: rgba(49, 69, 106, 0.8);
+}
+
+/* base & button styles */
 ol,
 ul,
 li {
@@ -104,6 +123,67 @@ li {
   font-weight: 400;
   line-height: 1.0625;
   border-radius: 10px;
+}
+
+.btn-calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.btn-calc.btn-calc-close {
+  width: 2rem;
+  height: 2rem;
+  background: #FF5D17;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn-calc.btn-calc-close:hover {
+  background: #e34400;
+}
+
+.btn-calc.btn-calc-add {
+  width: 2.875rem;
+  height: 2.875rem;
+  background: #11A088;
+}
+
+.btn-calc.btn-calc-add:hover {
+  background: #0c7261;
+}
+
+.btn-contact {
+  padding: 1.032rem 5.125rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.22;
+  color: #ffffff;
+  -webkit-box-shadow: 10px 4px 24px rgba(169, 156, 156, 0.25);
+          box-shadow: 10px 4px 24px rgba(169, 156, 156, 0.25);
+  border-radius: 16px;
+  background: #31456A;
+}
+
+@media (max-width: 575px) {
+  .btn-contact {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+.btn-contact:hover {
+  color: #ffffff;
+  border-color: #212e47;
+  background-color: #212e47;
 }
 
 /* navigation */
@@ -764,8 +844,16 @@ li {
   padding-bottom: 8rem;
 }
 
+@media (max-width: 991px) {
+  .testimonials {
+    padding-top: 0;
+  }
+}
+
 .testimonials .carousel {
-  max-width: 776px;
+  max-width: 800px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .testimonials .carousel-indicators {
@@ -809,11 +897,13 @@ li {
 .testimonials-image {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  max-width: 260px;
 }
 
 @media (max-width: 767px) {
   .testimonials-image {
     padding-bottom: 2rem;
+    max-width: none;
   }
 }
 
@@ -863,4 +953,210 @@ li {
   right: 0;
   bottom: 0;
 }
+
+/* calculator section */
+.calculator {
+  padding-top: 4.5rem;
+  padding-bottom: 1rem;
+  background: #EFF2F4;
+}
+
+.calculator-inner {
+  max-width: 1200px;
+  min-height: 20rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  background: url("../img/calc-img.png") right 76px top 66px no-repeat;
+}
+
+@media (max-width: 1199px) {
+  .calculator-inner {
+    background-position: right 0 top 66px;
+  }
+}
+
+@media (max-width: 991px) {
+  .calculator-inner {
+    padding-top: 0.5rem;
+    background: none;
+  }
+}
+
+.calc-form input,
+.calc-form select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.calc-form select {
+  background: url("../img/icon-arrow-down.png") right 1rem center no-repeat;
+}
+
+.calc-form select.calc-select-time {
+  background: url("../img/icon-arrow-down.png") right 1rem center no-repeat, url("../img/icon-clock.png") left 1rem center no-repeat;
+  background-color: #F7F8F9;
+}
+
+.calc-form label {
+  margin-bottom: 0;
+}
+
+.calc-form .form-control {
+  height: 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: #31456A;
+  font-weight: 300;
+  background-color: #F7F8F9;
+}
+
+.calc-form .calc-number {
+  width: 5.625rem;
+  text-align: center;
+}
+
+.calc-form .calc-select-size {
+  width: 14.125rem;
+  padding-left: 1rem;
+  padding-top: 0.625rem;
+}
+
+.calc-form .calc-select-cloud {
+  width: 11rem;
+  padding-left: 1rem;
+  padding-top: 0.625rem;
+}
+
+.calc-form .calc-select-time {
+  width: 13.375rem;
+  padding-left: 3.5rem;
+  padding-top: 0.625rem;
+}
+
+.calc-row {
+  position: relative;
+  padding-top: 2rem;
+}
+
+.calc-time::after {
+  position: absolute;
+  content: ' ';
+  bottom: -40px;
+  left: 15px;
+  width: 80%;
+  border: 1px solid #D5E2ED;
+}
+
+.calc-saving {
+  margin-top: 4rem;
+}
+
+.calc-saving p {
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.22;
+}
+
+@media (max-width: 767px) {
+  .calc-saving p {
+    font-size: 1.5rem;
+  }
+}
+
+.calc-saving p span {
+  color: #11A088;
+}
+
+/* footer (incl get-in-touch) */
+.main-footer {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0))), #EFF2F4;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EFF2F4;
+}
+
+.main-footer h2 {
+  display: inline-block;
+  position: relative;
+}
+
+.main-footer h2::before {
+  position: absolute;
+  content: url("../img/icon-title-contact.png");
+  top: -34px;
+  left: -40px;
+}
+
+.get-in-touch {
+  max-width: 600px;
+}
+
+.contact-form .form-control {
+  height: 3.375rem;
+  padding-left: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: #31456A;
+  font-weight: 400;
+  background: #ffffff;
+}
+
+.contact-form .form-control.contact-textarea {
+  height: 11.875rem;
+  padding-top: 1rem;
+  padding-right: 2.25rem;
+}
+
+.contact-row {
+  position: relative;
+}
+
+.contact-row::before {
+  position: absolute;
+}
+
+@media (max-width: 767px) {
+  .contact-row::before {
+    display: none;
+  }
+}
+
+.contact-row::after {
+  position: absolute;
+}
+
+@media (max-width: 767px) {
+  .contact-row::after {
+    display: none;
+  }
+}
+
+.contact-name-row::before {
+  content: url("../img/contact-name-img.png");
+  left: -20px;
+  bottom: -7px;
+}
+
+.contact-tel-row::before {
+  content: url("../img/contact-tel-img.png");
+  left: -90px;
+  bottom: -6px;
+}
+
+.contact-text-row::before {
+  content: url("../img/contact-text-left.png");
+  left: -243px;
+  bottom: -18px;
+  z-index: 10;
+}
+
+.contact-text-row::after {
+  content: url("../img/contact-text-right.png");
+  right: -132px;
+  bottom: -52px;
+  z-index: 10;
+}
+
+/* footer widgets */
 /*# sourceMappingURL=main.css.map */

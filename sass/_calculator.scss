@@ -1,0 +1,98 @@
+/* calculator section */
+.calculator {
+  padding-top: 4.5rem;
+  padding-bottom: 1rem;
+  background: #EFF2F4;
+}
+.calculator-inner {
+  max-width: 1200px;
+  min-height: 20rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  background: url('../img/calc-img.png') right 76px top 66px no-repeat;
+
+  @include respond-to('xl') {
+    background-position: right 0 top 66px;
+  }
+  @include respond-to('lg') {
+    padding-top: 0.5rem;
+    background: none;
+  }
+}
+.calc-form {
+  input,
+  select {
+    // -webkit-appearance: none;
+    appearance: none;
+  }
+  select {
+    background: url('../img/icon-arrow-down.png') right 1rem center no-repeat;
+
+    &.calc-select-time {
+      background: url('../img/icon-arrow-down.png') right 1rem center no-repeat, 
+                  url('../img/icon-clock.png') left 1rem center no-repeat;
+      background-color: #F7F8F9;
+    }
+  }
+  label {
+    margin-bottom: 0;
+  }
+  .form-control {
+    height: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #31456A;
+    font-weight: 300;
+    background-color: #F7F8F9;
+
+  } 
+  .calc-number {
+    width: 5.625rem;
+    text-align: center;
+  }
+  .calc-select-size {
+    width: 14.125rem;
+    padding-left: 1rem;
+    padding-top: 0.625rem;
+  }
+  .calc-select-cloud {
+    width: 11rem;
+    padding-left: 1rem;
+    padding-top: 0.625rem;
+  }
+  .calc-select-time {
+    width: 13.375rem;
+    padding-left: 3.5rem;
+    padding-top: 0.625rem;
+  }
+}
+.calc-row {
+  position: relative;
+  padding-top: 2rem;
+  // padding-bottom: 1rem;
+}
+.calc-time {
+  &::after {
+    position: absolute;
+    content: ' ';
+    bottom: -40px;
+    left: 15px;
+    width: 80%;
+    border: 1px solid #D5E2ED;
+  }
+}
+.calc-saving {
+  margin-top: 4rem;
+
+  p {
+    @include font(1.75rem, 800, 1.22);
+
+    @include respond-to('md') {
+      font-size: 1.5rem;
+    }
+
+    span {
+      color: $active-color;
+    }
+  }
+}

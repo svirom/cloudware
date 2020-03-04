@@ -33,3 +33,14 @@ h3 {
 .subtitle {
   @include font(1.125rem, 400, 1.83);
 }
+label {
+  @include font(1.25rem, 600, 1);
+
+  @include respond-to('xl') {
+    font-size: 1rem;
+  }
+}
+.contact-subtitle {
+  @include font(1.125rem, 500, 1.22);
+  color: rgba($main-color, 0.8);
+}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- add fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -85,16 +85,24 @@
                 </div>
                 <div class="carousel-item">
                   <div class="carousel-item-content d-flex align-items-center flex-column">
-                    <p class="h1">Fuel Growh With Saving On Cloud Costs 2</p>
+                    <ul class="d-flex hero-list">
+                      <li><img src="img/hero-azure.png" alt="Azure"></li>
+                      <li><img src="img/hero-aws.png" alt="AWS"></li>
+                    </ul>
+                    <h1>Fuel Growh With Saving On Cloud Costs 2</h1>
                     <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore. </p>
                     <div class="hero-btn">
-                      <a href="#" class="btn btn-lp">Start Your 7-Day Free Trial</a>
+                      <a href="#" class="btn btn-lp btn-trial">Start Your 7-Day Free Trial</a>
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <div class="d-flex align-items-center flex-column">
-                    <p class="h1">Fuel Growh With Saving On Cloud Costs 3</p>
+                  <div class="carousel-item-content d-flex align-items-center flex-column">
+                    <ul class="d-flex hero-list">
+                      <li><img src="img/hero-azure.png" alt="Azure"></li>
+                    </ul>
+                    <h1>Fuel Growh With Saving On Cloud Costs 3</h1>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore. </p>
                   </div>
                 </div>
               </div>
@@ -392,6 +400,208 @@
         </div>
       </div>
     </div>
+
+    <!-- calculator section -->
+    <div class="container-fluid calculator">
+      <div class="row">
+        <div class="col text-center">
+          <h2>Saving Calculator</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col calculator-inner mx-auto">
+          <div class="calc-form pl-2 pl-lg-0">
+            <form>
+              <div class="row align-items-center calc-row">
+                <div class="col-12 col-md-3 col-lg-auto my-2 my-lg-0">
+                  <label>We have almost</label>
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <input type="number" class="form-control calc-number" placeholder="1" min="0">
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <label>of</label>
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <select class="form-control calc-select-size">
+                    <option selected>Medium</option>
+                    <option>Small</option>
+                    <option>Large</option>
+                  </select>
+                </div>
+                <div class="w-100 d-lg-none"></div>
+                <div class="col-12 col-md-3 col-lg-auto my-2 my-lg-0">
+                  <label>Instances on</label>
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <select class="form-control calc-select-cloud">
+                    <option selected>AWS</option>
+                    <option>Azure</option>
+                    <option>Google Cloud</option>
+                  </select>
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <a href="#" class="btn btn-calc btn-calc-close">
+                    <img src="img/icon-plus.png" class="img-fluid" alt="Close">
+                  </a>
+                </div>
+              </div>
+              <div class="row align-items-center calc-row">
+                <div class="col-12 col-md-3 col-lg-auto col-auto my-2 my-lg-0">
+                  <label>We have almost</label>
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <input type="number" class="form-control calc-number" placeholder="1" min="0">
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <label>of</label>
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <select class="form-control calc-select-size">
+                    <option selected>Medium</option>
+                    <option>Small</option>
+                    <option>Large</option>
+                  </select>
+                </div>
+                <div class="w-100 d-lg-none"></div>
+                <div class="col-12 col-md-3 col-lg-auto my-2 my-lg-0">
+                  <label>Instances on</label>
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <select class="form-control calc-select-cloud">
+                    <option selected>AWS</option>
+                    <option>Azure</option>
+                    <option>Google Cloud</option>
+                  </select>
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <a href="#" class="btn btn-calc btn-calc-close">
+                    <img src="img/icon-plus.png" class="img-fluid" alt="Close">
+                  </a>
+                </div>
+              </div>
+              <div class="row align-items-center calc-row">
+                <div class="col-auto">
+                  <a href="#" class="btn btn-calc btn-calc-add">
+                    <img src="img/icon-plus.png" class="img-fluid" alt="Add">
+                  </a>
+                </div>
+              </div>
+              <div class="row align-items-center calc-row calc-time">
+                <div class="col-12 col-lg-auto my-2 my-lg-0">
+                  <label>We do not use our environments from</label>
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <select class="form-control calc-select-time">
+                    <option selected>06:30</option>
+                    <option>07:30</option>
+                    <option>08:30</option>
+                  </select>
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <label>To</label>
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <select class="form-control calc-select-time">
+                    <option selected>21:00</option>
+                    <option>19:00</option>
+                    <option>20:00</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row align-items-center calc-row calc-saving">
+                <div class="col-8 saving-title">
+                  <p class="saving-title-content">Your <span>monthly saving</span> is around</p>
+                </div>
+                <div class="col-4 saving-amount">
+                  <p class="saving-amount-content">$20</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer (incl get-in-touch) -->
+    <footer class="main-footer">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col text-center">
+            <h2>Get in touch</h2>
+            <p class="contact-subtitle">We’d love to hear about your blabla</p>
+          </div>
+        </div>
+        <!-- contact form -->
+        <div class="row">
+          <div class="col get-in-touch mx-auto mt-5">
+            <div class="contact-form">
+              <form>
+                <div class="row mb-4 contact-row contact-name-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Full Name">
+                  </div>
+                </div>
+                <div class="row mb-4 contact-row contact-tel-row">
+                  <div class="col">
+                    <input type="tel" class="form-control" placeholder="Phone Number">
+                  </div>
+                </div>
+                <div class="row mb-4 contact-row contact-text-row">
+                  <div class="col">
+                    <textarea class="form-control contact-row contact-textarea" placeholder="Message"></textarea>
+                  </div>
+                </div>
+                <div class="row mb-4 pt-3 contact-row contact-button-row">
+                  <div class="col text-center">
+                    <button type="submit" class="btn btn-contact">Get in touch</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- footer widgets -->
+        <div class="row footer-widgets">
+          <div class="col-5">
+            <div class="widget widget-left">
+              <div class="logo-footer">
+                <img src="img/logo-footer.png" alt="Logo">
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+          <div class="col-3 ">
+            <div class="widget widget-center">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-12">
+                <div class="widget widget-right">
+                  <h4 class="widget-title">Our phones</h4>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="widget widget-right">
+                  <h4 class="widget-title">Our mail</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     
 
     <!-- Optional JavaScript -->

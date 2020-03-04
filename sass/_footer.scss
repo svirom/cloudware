@@ -1,0 +1,86 @@
+/* footer (incl get-in-touch) */
+.main-footer {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EFF2F4;
+
+  h2 {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: url('../img/icon-title-contact.png');
+      top: -34px;
+      left: -40px;
+    }
+  }
+}
+.get-in-touch {
+  max-width: 600px;
+}
+.contact-form {
+  .form-control {
+    height: 3.375rem;
+    padding-left: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: $main-color;
+    font-weight: 400;
+    background: #ffffff;
+
+    &.contact-textarea {
+      height: 11.875rem;
+      padding-top: 1rem;
+      padding-right: 2.25rem;
+    }
+  }
+}
+.contact-row {
+  position: relative;
+
+  &::before {
+    position: absolute;
+
+    @include respond-to('md') {
+      display: none;
+    }
+  }
+  &::after {
+    position: absolute;
+
+    @include respond-to('md') {
+      display: none;
+    }
+  }
+}
+.contact-name-row {
+  &::before {
+    content: url('../img/contact-name-img.png');
+    left: -20px;
+    bottom: -7px;
+  }
+}
+.contact-tel-row {
+  &::before {
+    content: url('../img/contact-tel-img.png');
+    left: -90px;
+    bottom: -6px;
+  }
+}
+.contact-text-row {
+  &::before {
+    content: url('../img/contact-text-left.png');
+    left: -243px;
+    bottom: -18px;
+    z-index: 10;
+  }
+  &::after {
+    content: url('../img/contact-text-right.png');
+    right: -132px;
+    bottom: -52px;
+    z-index: 10;
+  }
+}
+
+/* footer widgets */
