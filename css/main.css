@@ -200,7 +200,7 @@ li {
 
 @media (max-width: 1199px) {
   .main-header .navbar {
-    height: auto;
+    height: 92px;
     background: rgba(0, 0, 0, 0.05);
   }
 }

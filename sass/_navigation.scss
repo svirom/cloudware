@@ -5,7 +5,7 @@
     height: 135px;
 
     @include respond-to('xl') {
-      height: auto;
+      height: 92px;
       background: rgba(0,0,0,0.05);
     }
   }
