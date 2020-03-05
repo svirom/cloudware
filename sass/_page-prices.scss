@@ -1,0 +1,38 @@
+/* page prices section */
+.page-pricing {
+  .prices {
+    padding-top: 8rem;
+
+    @include respond-to('lg') {
+      padding-top: 3rem;
+    }
+    @include respond-to('sm') {
+      padding-top: 5rem;
+    }
+  }
+}
+.page-pricing-text {
+  padding-top: 5rem;
+
+  @include respond-to('lg') {
+    padding-top: 2rem;
+  }
+
+  a {
+    color: $main-color;
+    font-weight: 500;
+  }
+
+  .prices-list {
+    padding-top: 0.25rem;
+    padding-left: 1rem;
+    line-height: 2;
+
+    li {
+      &::before {
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+}

@@ -48,3 +48,6 @@ label {
   @include font(1.125rem, 500, 1.22);
   color: rgba($main-color, 0.8);
 }
+.pricing-bold {
+  @include font(1rem, 600, 1.5);
+}

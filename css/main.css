@@ -77,6 +77,12 @@ label {
   color: rgba(49, 69, 106, 0.8);
 }
 
+.pricing-bold {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
 /* base & button styles */
 ol,
 ul,
@@ -1079,7 +1085,7 @@ li {
 
 /* footer (incl get-in-touch) */
 .main-footer {
-  padding-top: 6rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0))), #EFF2F4;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EFF2F4;
@@ -1095,6 +1101,10 @@ li {
   content: url("../img/icon-title-contact.png");
   top: -34px;
   left: -40px;
+}
+
+.main-footer-title {
+  padding-top: 5rem;
 }
 
 .get-in-touch {
@@ -1221,5 +1231,48 @@ li {
   font-weight: 400;
   line-height: 2.36;
   color: rgba(49, 69, 106, 0.5);
+}
+
+/* page prices section */
+.page-pricing .prices {
+  padding-top: 8rem;
+}
+
+@media (max-width: 991px) {
+  .page-pricing .prices {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .page-pricing .prices {
+    padding-top: 5rem;
+  }
+}
+
+.page-pricing-text {
+  padding-top: 5rem;
+}
+
+@media (max-width: 991px) {
+  .page-pricing-text {
+    padding-top: 2rem;
+  }
+}
+
+.page-pricing-text a {
+  color: #31456A;
+  font-weight: 500;
+}
+
+.page-pricing-text .prices-list {
+  padding-top: 0.25rem;
+  padding-left: 1rem;
+  line-height: 2;
+}
+
+.page-pricing-text .prices-list li::before {
+  width: 6px;
+  height: 6px;
 }
 /*# sourceMappingURL=main.css.map */

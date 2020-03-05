@@ -1,6 +1,6 @@
 /* footer (incl get-in-touch) */
 .main-footer {
-  padding-top: 6rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EFF2F4;
 
@@ -15,6 +15,9 @@
       left: -40px;
     }
   }
+}
+.main-footer-title {
+  padding-top: 5rem;
 }
 .get-in-touch {
   max-width: 600px;
