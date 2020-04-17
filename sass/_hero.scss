@@ -15,24 +15,24 @@
   }
   .carousel-item-content {
     height: 100%;
-    padding-top: 5rem;
+    padding: 5rem 1.25rem 0;
 
     h1 {
       max-width: 680px;
 
-      @include respond-to('sm') {
+      /* @include respond-to('sm') {
         padding-left: 1rem;
         padding-right: 1rem;
-      }
+      } */
     }
     .subtitle {
       max-width: 485px;
       margin-top: 1.5rem;
 
-      @include respond-to('sm') {
+      /* @include respond-to('sm') {
         padding-left: 1rem;
         padding-right: 1rem;
-      }
+      } */
     }
   }
   .carousel-indicators {
@@ -75,7 +75,7 @@
   }
 }
 .hero-btn {
-  margin-top: 3rem;
+  margin-top: 1rem;
 
   @include respond-to('sm') {
     margin-top: 1.25rem;
