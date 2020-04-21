@@ -933,7 +933,7 @@ li {
 
 .testimonials-image img {
   margin-bottom: 1rem;
-  border-radius: 0.25rem;
+  border-radius: 50%;
 }
 
 .testimonials-image .testimonials-name {
@@ -951,6 +951,16 @@ li {
 
 .testimonials-content {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 1.5rem;
   padding-left: 1.25rem;
 }
@@ -986,7 +996,7 @@ li {
 }
 
 .calculator-inner {
-  max-width: 1200px;
+  max-width: 1300px;
   min-height: 20rem;
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -1056,6 +1066,10 @@ li {
   width: 13.375rem;
   padding-left: 3.5rem;
   padding-top: 0.625rem;
+}
+
+.calc-form .calc-select-os-type {
+  width: 8rem;
 }
 
 .calc-row {

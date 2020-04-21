@@ -52,7 +52,7 @@
 
   img {
     margin-bottom: 1rem;
-    border-radius: 0.25rem;
+    border-radius: 50%;
   }
   .testimonials-name {
     margin-bottom: 0.25rem;
@@ -66,6 +66,9 @@
 }
 .testimonials-content {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-bottom: 1.5rem;
   padding-left: 1.25rem;
 

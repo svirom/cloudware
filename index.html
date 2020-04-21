@@ -1,6 +1,6 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,8 +14,11 @@
     <!-- custom styles -->
     <link rel="stylesheet" href="css/main.css">
 
-    <title>CloudWare Landing Page</title>
-  </head>
+    <!-- ReCaptcha v3-->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcuD-cUAAAAAM4nsvQTfmm-Pdr6LRJqVEaLo_Ce"></script>
+
+    <title>Save On Clouds: Your Choice of Cloud Cost Reduction Tool!</title>
+</head>
   <body>
     
     <!-- header navigation -->
@@ -350,41 +353,37 @@
               <ol class="carousel-indicators">
                 <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-testimonials" data-slide-to="1"></li>
-                <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+                <!-- <li data-target="#carousel-testimonials" data-slide-to="2"></li> -->
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="testimonials-item">
                     <div class="testimonials-image">
-                      <img src="img/testimonials-img.png" class="img-fluid" alt="Image">
-                      <p class="testimonials-name">Munoz Gabriel</p>
-                      <p class="testimonials-position">Counselor, MS, LMHC</p>
+                      <img src="img/testimonials/Asbjorn.jpeg" class="img-fluid" alt="Image">
+                      <p class="testimonials-name">Asbjorn Tonstad</p>
+                      <p class="testimonials-position">Norway</p>
                     </div>
                     <div class="testimonials-content">
-                      <h3>Save on clouds helps us reduce our prices and get more customers</h3>
-                      <p>Lorem ipsum dolor sit amet, an natum audire nec. Ne modus fabulas sit. No persecuti quaerendum has. Cu vis purto exerci alienum, qui an qualisque us laboramus eam.</p>
-                      <time>02/19/2020</time>
+                      <p>Save On Clouds help us have full control on our AWS costs and optimize the utilization of our development and staging EC2 instances as well as SQL Server databases.</p>
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="testimonials-item">
                     <div class="testimonials-image">
-                      <img src="img/testimonials-img.png" class="img-fluid" alt="Image">
-                      <p class="testimonials-name">Munoz Gabriel</p>
-                      <p class="testimonials-position">Counselor, MS, LMHC</p>
+                      <img src="img/testimonials/renaud.png" class="img-fluid" alt="Image">
+                      <p class="testimonials-name">Rando Tomson</p>
+                      <p class="testimonials-position">Estonia</p>
                     </div>
                     <div class="testimonials-content">
-                      <h3>2 Save on clouds helps us reduce our prices and get more customers</h3>
-                      <p>Lorem ipsum dolor sit amet, an natum audire nec. Ne modus fabulas sit. No persecuti quaerendum has. Cu vis purto exerci alienum, qui an qualisque us laboramus eam.</p>
-                      <time>02/19/2020</time>
+                      <p>We have reduced the cost of our large infrastructure on Google Cloud Platform from about <b>$60,000 per month to less than $40,000 per month, thanks to Save On Clouds.</b></p>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                   <div class="testimonials-item">
                     <div class="testimonials-image">
-                      <img src="img/testimonials-img.png" class="img-fluid" alt="Image">
+                      <img src="img/testimonials/testimonials-img.png" class="img-fluid" alt="Image">
                       <p class="testimonials-name">Munoz Gabriel</p>
                       <p class="testimonials-position">Counselor, MS, LMHC</p>
                     </div>
@@ -394,7 +393,7 @@
                       <time>02/19/2020</time>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -414,67 +413,38 @@
           <div class="calc-form pl-2 pl-lg-0">
             <form>
               <div class="row align-items-center calc-row">
-                <div class="col-12 col-md-3 col-lg-auto my-2 my-lg-0">
-                  <label>We have almost</label>
+                <div class="col-12 col-md-2 col-lg-auto col-auto my-2 my-lg-0">
+                  <label>We have</label>
                 </div>
                 <div class="col-auto my-2 my-lg-0">
-                  <input type="number" class="form-control calc-number" placeholder="1" min="0">
+                  <input type="number" class="form-control calc-number" placeholder="1" min="0" value="1">
+                </div>
+                <div class="w-100 d-lg-none"></div>
+                <div class="col-12 col-md-3 col-lg-auto my-2 my-lg-0">
+                  <label>instances on</label>
+                </div>
+                <div class="col-auto my-2 my-lg-0">
+                  <select class="form-control calc-select-cloud">
+                    <option value="1">AWS</option>
+                    <option value="2">Azure</option>
+                    <option value="3">Google Cloud</option>
+                  </select>
                 </div>
                 <div class="col-auto my-2 my-lg-0">
                   <label>of</label>
                 </div>
                 <div class="col-auto my-2 my-lg-0">
-                  <select class="form-control calc-select-size">
-                    <option selected>Medium</option>
-                    <option>Small</option>
-                    <option>Large</option>
+                  <select class="form-control calc-select-os-type">
+                    <option value="linux">Linux</option>
+                    <option value="windows">Windows</option>
                   </select>
-                </div>
-                <div class="w-100 d-lg-none"></div>
-                <div class="col-12 col-md-3 col-lg-auto my-2 my-lg-0">
-                  <label>Instances on</label>
-                </div>
-                <div class="col-auto my-2 my-lg-0">
-                  <select class="form-control calc-select-cloud">
-                    <option selected>AWS</option>
-                    <option>Azure</option>
-                    <option>Google Cloud</option>
-                  </select>
-                </div>
-                <div class="col-auto my-2 my-lg-0">
-                  <a href="#" class="btn btn-calc btn-calc-close">
-                    <img src="img/icon-plus.png" class="img-fluid" alt="Close">
-                  </a>
-                </div>
-              </div>
-              <div class="row align-items-center calc-row">
-                <div class="col-12 col-md-3 col-lg-auto col-auto my-2 my-lg-0">
-                  <label>We have almost</label>
-                </div>
-                <div class="col-auto my-2 my-lg-0">
-                  <input type="number" class="form-control calc-number" placeholder="1" min="0">
-                </div>
-                <div class="col-auto my-2 my-lg-0">
-                  <label>of</label>
                 </div>
                 <div class="col-auto my-2 my-lg-0">
                   <select class="form-control calc-select-size">
-                    <option selected>Medium</option>
-                    <option>Small</option>
-                    <option>Large</option>
+
                   </select>
                 </div>
-                <div class="w-100 d-lg-none"></div>
-                <div class="col-12 col-md-3 col-lg-auto my-2 my-lg-0">
-                  <label>Instances on</label>
-                </div>
-                <div class="col-auto my-2 my-lg-0">
-                  <select class="form-control calc-select-cloud">
-                    <option selected>AWS</option>
-                    <option>Azure</option>
-                    <option>Google Cloud</option>
-                  </select>
-                </div>
+
                 <div class="col-auto my-2 my-lg-0">
                   <a href="#" class="btn btn-calc btn-calc-close">
                     <img src="img/icon-plus.png" class="img-fluid" alt="Close">
@@ -490,23 +460,17 @@
               </div>
               <div class="row align-items-center calc-row calc-time">
                 <div class="col-12 col-lg-auto my-2 my-lg-0">
-                  <label>We do not use our environments from</label>
+                  <label>We do use our environments from</label>
                 </div>
                 <div class="col-auto my-2 my-lg-0">
-                  <select class="form-control calc-select-time">
-                    <option selected>06:30</option>
-                    <option>07:30</option>
-                    <option>08:30</option>
+                  <select class="form-control calc-select-time start-time">
                   </select>
                 </div>
                 <div class="col-auto my-2 my-lg-0">
-                  <label>To</label>
+                  <label>to</label>
                 </div>
                 <div class="col-auto my-2 my-lg-0">
-                  <select class="form-control calc-select-time">
-                    <option selected>21:00</option>
-                    <option>19:00</option>
-                    <option>20:00</option>
+                  <select class="form-control calc-select-time stop-time">
                   </select>
                 </div>
               </div>
@@ -515,7 +479,7 @@
                   <p class="saving-title-content">Your <span>monthly saving</span> is around</p>
                 </div>
                 <div class="col-4 saving-amount">
-                  <p class="saving-amount-content">$20</p>
+                  <p class="saving-amount-content">$0</p>
                 </div>
               </div>
             </form>
@@ -537,25 +501,32 @@
         <div class="row">
           <div class="col get-in-touch mx-auto mt-5">
             <div class="contact-form">
-              <form>
+              <form id="contact-form">
                 <div class="row mb-4 contact-row contact-name-row">
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Full Name">
+                    <input id="fullName" type="text" name="fullName" class="form-control" placeholder="Full Name" required>
                   </div>
                 </div>
                 <div class="row mb-4 contact-row contact-tel-row">
                   <div class="col">
-                    <input type="tel" class="form-control" placeholder="Phone Number">
+                    <input id="email" type="email" name="email" class="form-control" placeholder="E-mail" required>
+                  </div>
+                </div>
+                <div class="row mb-4 contact-row contact-tel-row">
+                  <div class="col">
+                    <input id="phoneNumber" type="tel" name="phoneNumber" class="form-control" placeholder="Phone Number">
                   </div>
                 </div>
                 <div class="row mb-4 contact-row contact-text-row">
                   <div class="col">
-                    <textarea class="form-control contact-row contact-textarea" placeholder="Message"></textarea>
+                    <textarea id="message" name="message" class="form-control contact-row contact-textarea" placeholder="Message" required></textarea>
                   </div>
                 </div>
                 <div class="row mb-4 pt-3 contact-row contact-button-row">
                   <div class="col text-center">
                     <button type="submit" class="btn btn-contact">Get in touch</button>
+                    <p id="confirmMessage" style="display: none;" class="text-success mt-5">Thank you for your interest, we will get back to you soon.</p>
+                    <p id="errorMessage" style="display: none;" class="text-danger mt-5">An error occurred. Try again later.</p>
                   </div>
                 </div>
               </form>
@@ -621,5 +592,17 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(102574)</script> 
+
+    <script src="js/CostCalculator.js"></script>
+    <script src="js/Contact.js"></script>
+    <script>
+      $(function () {
+        CostCalculator.Init('https://dev.saveonclouds.com.au');
+
+        Contact.Init('https://dev.saveonclouds.com.au');
+      });
+    </script>
+
   </body>
 </html>
