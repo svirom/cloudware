@@ -1,608 +1,835 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="keywords" content="aws cost calculator,aws cost,aws instance cost,aws cost optimization,aws cost savings,aws cost saving steps,aws cost saving tools,aws savings plan,
+		  aws savings,azure cost calculator,azure cost,azure cost management
+,azure cost saving tips,azure cost saving,google cloud cost,google cloud pricing,google cloud compute pricing,google cloud sql pricing,aws azure price compare,aws azure cost comparison,
+		  aws vs azure cost,aws azure gcp price comparisonsave on cloud free,reduce cloud costs,ec2 cost calculator,ec2 cost per month,ec2 cost comparison,
+		  ec2 cost optimizationazure vm cost calculator,azure vm cost" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- add fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
+	<!-- add fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- custom styles -->
-    <link rel="stylesheet" href="css/main.css">
+	<!-- custom styles -->
+	<link rel="stylesheet" href="css/main.css">
 
-    <!-- ReCaptcha v3-->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LcuD-cUAAAAAM4nsvQTfmm-Pdr6LRJqVEaLo_Ce"></script>
+	<!-- ReCaptcha v3-->
+	<script src="https://www.google.com/recaptcha/api.js?render=6LcuD-cUAAAAAM4nsvQTfmm-Pdr6LRJqVEaLo_Ce"></script>
 
-    <title>Save On Clouds: Your Choice of Cloud Cost Reduction Tool!</title>
+	<title>Save On Clouds: Your Choice of Cloud Cost Reduction Tool!</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164326379-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-164326379-2');
+	</script>
+
 </head>
-  <body>
-    
-    <!-- header navigation -->
-    <header class="container-xl main-header">
-      <div class="row">
-        <nav class="col navbar navbar-expand-xl px-xl-0">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.png" alt="Logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="nav-opener"><span></span></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="main-menu">
-            <ul class="navbar-nav ml-auto header-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Terms & Conditions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://saveoncloudsblog.cloud/?p=27" target="_blank">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://saveoncloudsblog.cloud" target="_blank">Documentation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQs</a>
-              </li>
-            </ul>
-            <div class="navbar-login ml-4 my-4 my-xl-0">
-              <a href="#" class="btn btn-lp mr-4">Sign Up</a>
-              <a href="#" class="btn btn-link">Login</a>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
+<body>
 
-    <!-- hero section -->
-    <div class="hero-section">
-      <div class="container-fluid px-0">
-        <div class="row no-gutters">
-          <div class="col text-center">
-            <div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-              <ol class="carousel-indicators d-inline-block">
-                <li data-target="#carousel-hero" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-hero" data-slide-to="1"></li>
-                <li data-target="#carousel-hero" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="carousel-item-content d-flex align-items-center flex-column">
-                    <ul class="d-flex hero-list">
-                      <li><img src="img/hero-azure.png" alt="Azure"></li>
-                      <li><img src="img/hero-aws.png" alt="AWS"></li>
-                      <li><img src="img/hero-googlecloud.png" alt="Google Cloud"></li>
-                    </ul>
-                    <h1>Fuel Growh With Saving On Cloud Costs</h1>
-                    <p class="subtitle">We optimize the utilization of your cloud resources so you can save money!</p>
-                    <div class="hero-btn">
-                      <a href="#" class="btn btn-contact btn-demo" data-target="#carousel-hero" data-slide-to="1">Watch the Demo</a>
-                      <div class="w-100 mt-4"></div>
-                      <a href="#" class="btn btn-lp btn-trial">Start Your 7-Day Free Trial</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="carousel-item-content d-flex align-items-center flex-column">
-                    <h1 class="pb-1">Watch the Demo</h1>
-                    <!-- embed demo video -->
-                    <script src="//fast.wistia.com/embed/medias/4j5wwfsko0.jsonp" async></script>
-                    <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
-                    <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;width: 100%;max-width: 700px;">
-                      <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                        <div class="wistia_embed wistia_async_4j5wwfsko0 videoFoam=true" style="height:100%;position:relative;width:100%"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="carousel-item-content d-flex align-items-center flex-column">
-                    <ul class="d-flex hero-list">
-                      <li><img src="img/hero-azure.png" alt="Azure"></li>
-                    </ul>
-                    <h1>Fuel Growh With Saving On Cloud Costs 3</h1>
-                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore. </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-images">
-        <img src="img/hero-left-bkgr.png" alt="Image" class="img-fluid hero-image-left">
-        <img src="img/hero-right-bkgr.png" alt="Image" class="img-fluid hero-image-right">
-      </div>
-    </div>
+	<!-- header navigation -->
+	<header class="container-xl main-header">
+		<div class="row">
+			<nav class="col navbar navbar-expand-xl px-xl-0">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/logo.png" alt="Logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="nav-opener"><span></span></span>
+				</button>
 
-    <!-- features section -->
-    <div class="container-xl features">
-      <div class="row">
-        <div class="col-sm-6 col-md-4 text-center">
-          <div class="card align-items-center justify-content-center features-card">
-            <img src="img/features-icon-accounts.png" class="img-fluid" alt="Icon">
-            <h3>Unlimited cloud accounts</h3>
-            <div class="card-body">
-              <p class="card-text">Add as many AWS, Azure or Google Cloud accounts as you wish.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 text-center">
-          <div class="card align-items-center justify-content-center features-card">
-            <img src="img/features-icon-calendar.png" class="img-fluid" alt="Icon">
-            <h3>Your Schedule</h3>
-            <div class="card-body">
-              <p class="card-text">Switch your resources individually or collectively based on a schedule.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 text-center">
-          <div class="card align-items-center justify-content-center features-card">
-            <img src="img/features-icon-users.png" class="img-fluid" alt="Icon">
-            <h3>Unlimited users and groups</h3>
-            <div class="card-body">
-              <p class="card-text">Invite your collegues to help you with managing your resources. Ther is no limit!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 text-center">
-          <div class="card align-items-center justify-content-center features-card">
-            <img src="img/features-icon-optimisation.png" class="img-fluid" alt="Icon">
-            <h3>API</h3>
-            <div class="card-body">
-              <p class="card-text">You can manage your resources via our Restful APIs. Perfect solution for automation!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 text-center">
-          <div class="card align-items-center justify-content-center features-card">
-            <img src="img/features-icon-notifications.png" class="img-fluid" alt="Icon">
-            <h3>Notifications</h3>
-            <div class="card-body">
-              <p class="card-text">Receive notifications via email, Microsoft Teams, Slack, PagerDuty etc when resource statuses change.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 text-center">
-          <div class="card align-items-center justify-content-center features-card">
-            <img src="img/features-icon-innovation.png" class="img-fluid" alt="Icon">
-            <h3>AI-driven recommendations</h3>
-            <div class="card-body">
-              <p class="card-text">AIPO stands for AI-Powered Optmization. It analyzes your resource utilization and optimizes your utlization windows.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+				<div class="collapse navbar-collapse" id="main-menu">
+					<ul class="navbar-nav ml-auto header-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="https://portal.saveonclouds.com/Home/Terms" target="_blank">Terms & Conditions</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pricing.html" target="_blank">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="http://info.saveonclouds.com" target="_blank">Documentation</a>
+						</li>
+					</ul>
+					<div class="navbar-login ml-4 my-4 my-xl-0">
+						<a href="https://portal.saveonclouds.com/Accounts/Signup" class="btn btn-lp mr-4">Sign Up</a>
+						<a href="https://portal.saveonclouds.com/Accounts/SignIn" class="btn btn-link">Login</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
 
-    <!-- advantages section -->
-    <div class="container-xl advantages">
-      <div class="row">
-        <div class="col text-center">
-          <h2>Advantages</h2>
-        </div>
-      </div>
-      <div class="row mt-0 mt-lg-5">
-        <div class="col-sm-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
-          <div class="card align-items-center advantages-card">
-            <img src="img/advantages-icon-stripe.png" class="img-fluid mb-2" alt="Icon">
-            <h3>Powered by Stripe</h3>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
-          <div class="card align-items-center advantages-card">
-            <img src="img/advantages-icon-cloudflare.png" class="img-fluid mb-2" alt="Icon">
-            <h3>Secure by CloudFlare</h3>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
-          <div class="card align-items-center advantages-card">
-            <img src="img/advantages-icon-cost.png" class="img-fluid" alt="Icon">
-            <h3>Low Cost</h3>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
-          <div class="card align-items-center advantages-card">
-            <img src="img/advantages-icon-nolearning.png" class="img-fluid" alt="Icon">
-            <h3>No Learning Curve</h3>
-          </div>
-        </div>
-      </div>
-    </div>
+	<!-- hero section -->
+	<div class="hero-section">
+		<div class="container-fluid px-0">
+			<div class="row no-gutters">
+				<div class="col text-center">
+					<div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel" data-interval="10000">
+						<ol class="carousel-indicators d-inline-block">
+							<li data-target="#carousel-hero" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-hero" data-slide-to="1"></li>
+							<li data-target="#carousel-hero" data-slide-to="2"></li>
+							<li data-target="#carousel-hero" data-slide-to="3"></li>
+							<li data-target="#carousel-hero" data-slide-to="4"></li>
+						</ol>
+						<div class="carousel-inner">
 
-    <!-- how-it-works section -->
-    <div class="how-it-works">
-      <div class="container-xl">
-        <div class="row">
-          <div class="col text-center">
-            <h2>How It works</h2>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-md-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
-            <div class="card align-items-center justify-content-end how-card">
-              <img src="img/how-it-works-icon-1.png" class="img-fluid mb-0 mb-lg-1" alt="Icon">
-              <h3><sup>01</sup>Add Account</h3>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
-            <div class="card align-items-center justify-content-end how-card">
-              <img src="img/how-it-works-icon-2.png" class="img-fluid mb-0 mb-lg-5" alt="Icon">
-              <h3><sup class="active">02</sup>Create Schedule</h3>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
-            <div class="card align-items-center justify-content-end how-card">
-              <img src="img/how-it-works-icon-3.png" class="img-fluid" alt="Icon">
-              <h3><sup>03</sup>Choose Cloud Resources</h3>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
-            <div class="card align-items-center justify-content-end how-card">
-              <img src="img/how-it-works-icon-4.png" class="img-fluid mb-0 mb-lg-3" alt="Icon">
-              <h3><sup>04</sup>Enjoy Savings</h3>
-            </div>
-          </div>
-        </div>
-        <div class="advantages-btn text-center">
-          <a href="#" class="btn btn-lp btn-trial">Start Your 7-Day Free Trial</a>
-        </div>
-      </div>
-    </div>
+							<!-- slide main -->
+							<div class="carousel-item active">
+								<div class="carousel-item-content d-flex align-items-center flex-column">
+									<ul class="d-flex hero-list">
+										<li><img src="img/hero-azure.png" alt="Azure"></li>
+										<li><img src="img/hero-aws.png" alt="AWS"></li>
+										<li><img src="img/hero-googlecloud.png" alt="Google Cloud"></li>
+									</ul>
+									<h1>Fuel Growth With Saving On Cloud Costs</h1>
+									<p class="subtitle">We reduce your operational costs by optimizing the utilization of Virtual Machines and Databases on AWS, Azure and Google Cloud Platform. </p>
+									<div class="hero-btn">
+										<a href="#" class="btn btn-contact btn-demo" data-target="#carousel-hero" data-slide-to="1">Watch the Demo</a>
+										<div class="w-100 mt-4"></div>
+										<a href="https://portal.saveonclouds.com/Accounts/Signup" class="btn btn-lp btn-trial">Start Your 7-Day Free Trial</a>
+									</div>
+								</div>
+								<div class="hero-images">
+									<img src="img/hero-left-bkgr.png" alt="Image" class="img-fluid hero-image-left">
+									<img src="img/hero-right-bkgr.png" alt="Image" class="img-fluid hero-image-right">
+								</div>
+							</div>
 
-    <!-- prices section -->
-    <div class="container-xl prices">
-      <div class="row">
-        <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-end">
-          <div class="card prices-card prices-trial-card">
-            <div class="card-body">
-              <h3 class="prices-title text-center">Free 7-Day Trial</h3>
-              <ul class="prices-list">
-                <li>Unlimited Cloud Accounts</li>
-                <li>Unlimited Cloud Resources</li>
-                <li>Unlimited Environments</li>
-                <li>Unlimited Schedules</li>
-                <li>Unlimited Users and Teams</li>
-                <li>Notifications Channels</li>
-                <li>Licence is valid for 7 days</li>                 
-              </ul>
-              <div class="prices-btn text-center">
-                <a href="#" class="btn btn-lp btn-prices">Start Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start prices-business">
-          <div class="card prices-card prices-business-card">
-            <div class="card-body">
-              <h3 class="prices-title prices-business-title text-center">Frist Class</h3>
-              <ul class="prices-list">
-                <li>Unlimited Cloud Accounts</li>
-                <li>Unlimited Cloud Resources</li>
-                <li>Unlimited Environments</li>
-                <li>Unlimited Schedules</li>
-                <li>Unlimited Users and Teams</li>
-                <li>Notifications Channels</li>
-                <li>AI-Powered Optimization</li>                 
-              </ul>
-              <div class="prices-btn text-center">
-                <a href="#" class="btn btn-lp btn-business-prices">
-                  <span class="d-flex justify-content-center align-items-center">
-                    <span class="prices-btn-left">$2.99</span>
-                    <span class="d-flex flex-column align-items-start prices-btn-small">
-                      <span>per instance</span>
-                      <span>per month</span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+							<!-- slide demo -->
+							<div class="carousel-item">
+								<div class="carousel-item-content d-flex align-items-center flex-column">
+									<h1 class="pb-1">Watch the Demo</h1>
+									<!-- embed demo video -->
+									<script src="https://fast.wistia.com/embed/medias/4j5wwfsko0.jsonp" async></script>
+									<script src="https://fast.wistia.com/assets/external/E-v1.js" async>
+									</script><div class="wistia_responsive_padding" style="padding: 56.25% 0 0 0; position: relative; width: 100%;max-width: 700px;">
 
-    <!-- FAQs section -->
-    <div class="container-fluid faqs">
-      <div class="row">
-        <div class="col text-center">
-          <h2>Frequently Asked Questions</h2>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-lg-6 text-right d-none d-lg-block">
-          <img src="img/faqs-img.png" class="img-fluid" alt="Image">
-        </div>
-        <div class="col-lg-6 faqs-questions mx-auto mx-lg-0">
-          <div class="faqs-question mb-5">
-            <h3>What is a Cloud Resource?</h3>
-            <p>A virtual machine such as AWS EC2, or a database such as Google Cloud SQL.</p>
-          </div>
-          <div class="faqs-question mb-5">
-            <h3>What is an Environment?</h3>
-            <p>An Environment is a collection of resources. For example your "Shared Services" environment may include virtual machines and databases that are used by your CI/CD system.</p>
-          </div>
-          <div class="faqs-question mb-5">
-            <h3>What is a Schedule?</h3>
-            <p>You define a schedule to control that when an individual resource or an environment (a collection of resources) must be turned on or off.</p>
-          </div>
-          <div class="faqs-question mb-5">
-            <h3>What is AIPO?</h3>
-            <p>AI-Powered Optimizer is our artifial intelligence robot. It analyzes your usage data and comes up with optimized schedules that can maximise your savings.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+										<div class="wistia_responsive_wrapper" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;">
+											<div class="wistia_embed wistia_async_4j5wwfsko0 videoFoam=true" style="height: 100%; position: relative; width: 100%">
+												<div class="wistia_swatch" style="height: 100%; left: 0; opacity: 0; overflow: hidden; position: absolute; top: 0; transition: opacity 200ms; width: 100%;">
+													<img src="https://fast.wistia.com/embed/medias/4j5wwfsko0/swatch" style="filter: blur(5px); height: 100%; object-fit: contain; width: 100%;" alt=""
+														 aria-hidden="true" onload="this.parentNode.style.opacity = 1;" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="hero-images">
+									<img src="img/hero-left-bkgr.png" alt="Image" class="img-fluid hero-image-left">
+									<img src="img/hero-right-bkgr.png" alt="Image" class="img-fluid hero-image-right">
+								</div>
+							</div>
 
-    <!-- testimonials section -->
-    <div class="testimonials">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <h2>Testimonials</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div id="carousel-testimonials" class="carousel slide mx-auto mt-5" data-ride="carousel" data-interval="3000">
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-testimonials" data-slide-to="1"></li>
-                <!-- <li data-target="#carousel-testimonials" data-slide-to="2"></li> -->
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="testimonials-item">
-                    <div class="testimonials-image">
-                      <img src="img/testimonials/Asbjorn.jpeg" class="img-fluid" alt="Image">
-                      <p class="testimonials-name">Asbjorn Tonstad</p>
-                      <p class="testimonials-position">Norway</p>
-                    </div>
-                    <div class="testimonials-content">
-                      <p>Save On Clouds help us have full control on our AWS costs and optimize the utilization of our development and staging EC2 instances as well as SQL Server databases.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="testimonials-item">
-                    <div class="testimonials-image">
-                      <img src="img/testimonials/renaud.png" class="img-fluid" alt="Image">
-                      <p class="testimonials-name">Rando Tomson</p>
-                      <p class="testimonials-position">Estonia</p>
-                    </div>
-                    <div class="testimonials-content">
-                      <p>We have reduced the cost of our large infrastructure on Google Cloud Platform from about <b>$60,000 per month to less than $40,000 per month, thanks to Save On Clouds.</b></p>
-                    </div>
-                  </div>
-                </div>
-                <!-- <div class="carousel-item">
-                  <div class="testimonials-item">
-                    <div class="testimonials-image">
-                      <img src="img/testimonials/testimonials-img.png" class="img-fluid" alt="Image">
-                      <p class="testimonials-name">Munoz Gabriel</p>
-                      <p class="testimonials-position">Counselor, MS, LMHC</p>
-                    </div>
-                    <div class="testimonials-content">
-                      <h3>3 Save on clouds helps us reduce our prices and get more customers</h3>
-                      <p>Lorem ipsum dolor sit amet, an natum audire nec. Ne modus fabulas sit. No persecuti quaerendum has. Cu vis purto exerci alienum, qui an qualisque us laboramus eam.</p>
-                      <time>02/19/2020</time>
-                    </div>
-                  </div>
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+							<!-- slide amazon -->
+							<div class="carousel-item">
+								<div class="carousel-item-content d-flex align-items-center flex-column">
+									<ul class="d-flex hero-list mb-4">
+										<li><img src="img/hero-aws-large.png" alt="AWS" class="img-fluid"></li>
+									</ul>
+									<h2 class="hero-h2 mb-3">Amazon <span>Web Services</span></h2>
+									<div class="d-flex hero-cards flex-wrap justify-content-center">
+										<div class="hero-card hero-card-amazon">
+											<div class="hero-card-img">
+												<img src="img/amazon-ec2.png" alt="Amazon EC2" class="img-fluid">
+											</div>
+											<div class="hero-card-text">
+												<p>Amazon</p>
+												<p><strong>EC2</strong></p>
+											</div>
+										</div>
+										<div class="hero-card hero-card-amazon">
+											<div class="hero-card-img">
+												<img src="img/amazon-rds.png" alt="Amazon RDS" class="img-fluid">
+											</div>
+											<div class="hero-card-text">
+												<p>Amazon</p>
+												<p><strong>RDS</strong></p>
+											</div>
+										</div>
+										<div class="hero-card hero-card-amazon">
+											<div class="hero-card-img">
+												<img src="img/amazon-aurora.png" alt="Amazon Aurora Clusters" class="ml-4 img-fluid">
+											</div>
+											<div class="hero-card-text">
+												<p>Amazon</p>
+												<p><strong>Aurora Clusters</strong></p>
+											</div>
+										</div>
+										<div class="hero-card hero-card-amazon">
+											<div class="hero-card-img">
+												<img src="img/amazon-groups.png" alt="Amazon Scaling Groups" class="img-fluid">
+											</div>
+											<div class="hero-card-text">
+												<p>Amazon</p>
+												<p><strong>Scaling Groups</strong></p>
+											</div>
+										</div>
+										<!-- <div class="hero-card hero-card-amazon">
+											<div class="hero-card-img">
+												<img src="img/amazon-cache.png" alt="Amazon Elastic Cache" class="img-fluid">
+											</div>
+											<div class="hero-card-text">
+												<p>Amazon</p>
+												<p><strong>Elastic Cache</strong></p>
+												<p>(Redis)</p>
+											</div>
+										</div> -->
+									</div>
+									<div class="hero-btn mt-3 mt-md-5">
+										<!-- <a href="#" class="btn btn-contact btn-demo" data-target="#carousel-hero" data-slide-to="1">Watch the Demo</a>
+										<div class="w-100 mt-4"></div> -->
+										<a href="https://portal.saveonclouds.com/Accounts/Signup" class="btn btn-lp btn-trial">Start Your 7-Day Free Trial</a>
+									</div>
+								</div>
+								<div class="hero-images">
+									<img src="img/hero-left-bkgr3.png" alt="Image" class="img-fluid hero-image-left hero-image-amazon">
+									<img src="img/hero-right-bkgr3.png" alt="Image" class="img-fluid hero-image-right hero-image-amazon">
+								</div>
+							</div>
 
-    <!-- calculator section -->
-    <div class="container-fluid calculator">
-      <div class="row">
-        <div class="col text-center">
-          <h2>Saving Calculator</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col calculator-inner mx-auto">
-          <div class="calc-form pl-2 pl-lg-0">
-            <form>
-              <div class="row align-items-center calc-row">
-                <div class="col-12 col-md-2 col-lg-auto col-auto my-2 my-lg-0">
-                  <label>We have</label>
-                </div>
-                <div class="col-auto my-2 my-lg-0">
-                  <input type="number" class="form-control calc-number" placeholder="1" min="0" value="1">
-                </div>
-                <div class="w-100 d-lg-none"></div>
-                <div class="col-12 col-md-3 col-lg-auto my-2 my-lg-0">
-                  <label>instances on</label>
-                </div>
-                <div class="col-auto my-2 my-lg-0">
-                  <select class="form-control calc-select-cloud">
-                    <option value="1">AWS</option>
-                    <option value="2">Azure</option>
-                    <option value="3">Google Cloud</option>
-                  </select>
-                </div>
-                <div class="col-auto my-2 my-lg-0">
-                  <label>of</label>
-                </div>
-                <div class="col-auto my-2 my-lg-0">
-                  <select class="form-control calc-select-os-type">
-                    <option value="linux">Linux</option>
-                    <option value="windows">Windows</option>
-                  </select>
-                </div>
-                <div class="col-auto my-2 my-lg-0">
-                  <select class="form-control calc-select-size">
+							<!-- slide azure -->
+							<div class="carousel-item">
+								<div class="carousel-item-content d-flex align-items-center flex-column">
+									<ul class="d-flex hero-list mb-4">
+										<li><img src="img/hero-azure-large.png" alt="Azure" class="img-fluid"></li>
+									</ul>
+									<h2 class="hero-h2 mb-3"><span>Microsoft Azure</span></h2>
+									<div class="d-flex hero-cards flex-wrap justify-content-center">
+										<div class="hero-card hero-card-azure">
+											<div class="hero-card-img">
+												<img src="img/azure-virtual.png" alt="Azure Virtual" class="img-fluid">
+											</div>
+											<div class="hero-card-text">
+												<p>Virtual Machines</p>
+											</div>
+										</div>
+										<div class="hero-card hero-card-azure">
+											<div class="hero-card-img">
+												<img src="img/azure-sets.png" alt="Azure Virtual Sets" class="img-fluid">
+											</div>
+											<div class="hero-card-text">
+												<p>Virtual Machine</p>
+												<p><strong>Scale Sets</strong></p>
+											</div>
+										</div>
+									</div>
+									<div class="hero-btn mt-3 mt-md-5">
+										<!-- <a href="#" class="btn btn-contact btn-demo" data-target="#carousel-hero" data-slide-to="1">Watch the Demo</a>
+										<div class="w-100 mt-4"></div> -->
+										<a href="https://portal.saveonclouds.com/Accounts/Signup" class="btn btn-lp btn-trial">Start Your 7-Day Free Trial</a>
+									</div>
+								</div>
+								<div class="hero-images">
+									<img src="img/hero-left-bkgr4.png" alt="Image" class="img-fluid hero-image-left hero-image-azure">
+									<img src="img/hero-right-bkgr4.png" alt="Image" class="img-fluid hero-image-right hero-image-azure">
+								</div>
+							</div>
 
-                  </select>
-                </div>
+							<!-- slide googlecloud -->
+							<div class="carousel-item">
+								<div class="carousel-item-content d-flex align-items-center flex-column">
+									<ul class="d-flex hero-list mb-4">
+										<li><img src="img/hero-googlecloud-large.png" alt="Googlecloud" class="img-fluid"></li>
+									</ul>
+									<h2 class="hero-h2 mb-3">Google <span>Cloud Platform</span></h2>
+									<div class="d-flex hero-cards flex-wrap justify-content-center">
+										<div class="hero-card hero-card-googlecloud">
+											<div class="hero-card-img">
+												<img src="img/googlecloud-virtual.png" alt="Googlecloud Virtual" class="img-fluid">
+											</div>
+											<div class="hero-card-text">
+												<p>Virtual Machines</p>
+											</div>
+										</div>
+										<div class="hero-card hero-card-googlecloud">
+											<div class="hero-card-img">
+												<img src="img/googlecloud-sql.png" alt="Googlecloud SQL Databases" class="img-fluid">
+											</div>
+											<div class="hero-card-text">
+												<p>SQL Databases</p>
+											</div>
+										</div>
+										<div class="hero-card hero-card-googlecloud">
+											<div class="hero-card-img">
+												<img src="img/googlecloud-sets.png" alt="Googlecloud Scaling Sets" class="img-fluid">
+											</div>
+											<div class="hero-card-text">
+												<p>Scaling Sets</p>
+											</div>
+										</div>
+									</div>
+									<div class="hero-btn mt-3 mt-md-5">
+										<!-- <a href="#" class="btn btn-contact btn-demo" data-target="#carousel-hero" data-slide-to="1">Watch the Demo</a>
+										<div class="w-100 mt-4"></div> -->
+										<a href="https://portal.saveonclouds.com/Accounts/Signup" class="btn btn-lp btn-trial">Start Your 7-Day Free Trial</a>
+									</div>
+								</div>
+								<div class="hero-images">
+									<img src="img/hero-left-bkgr5.png" alt="Image" class="img-fluid hero-image-left hero-image-googlecloud">
+									<img src="img/hero-right-bkgr5.png" alt="Image" class="img-fluid hero-image-right hero-image-googlecloud">
+								</div>
+							</div>
+							
+						</div>
+						<!-- <div class="hero-images">
+							<img src="img/hero-left-bkgr.png" alt="Image" class="img-fluid hero-image-left">
+							<img src="img/hero-right-bkgr.png" alt="Image" class="img-fluid hero-image-right">
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-                <div class="col-auto my-2 my-lg-0">
-                  <a href="#" class="btn btn-calc btn-calc-close">
-                    <img src="img/icon-plus.png" class="img-fluid" alt="Close">
-                  </a>
-                </div>
-              </div>
-              <div class="row align-items-center calc-row">
-                <div class="col-auto">
-                  <a href="#" class="btn btn-calc btn-calc-add">
-                    <img src="img/icon-plus.png" class="img-fluid" alt="Add">
-                  </a>
-                </div>
-              </div>
-              <div class="row align-items-center calc-row calc-time">
-                <div class="col-12 col-lg-auto my-2 my-lg-0">
-                  <label>We do use our environments from</label>
-                </div>
-                <div class="col-auto my-2 my-lg-0">
-                  <select class="form-control calc-select-time start-time">
-                  </select>
-                </div>
-                <div class="col-auto my-2 my-lg-0">
-                  <label>to</label>
-                </div>
-                <div class="col-auto my-2 my-lg-0">
-                  <select class="form-control calc-select-time stop-time">
-                  </select>
-                </div>
-              </div>
-              <div class="row align-items-center calc-row calc-saving">
-                <div class="col-8 saving-title">
-                  <p class="saving-title-content">Your <span>monthly saving</span> is around</p>
-                </div>
-                <div class="col-4 saving-amount">
-                  <p class="saving-amount-content">$0</p>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+	<!-- how-it-works section -->
+	<div class="about">
+		<div class="container-xl">
+			<div class="row mb-5">
+				<div class="col-12 text-center">
+					<h2>What is <span>Save On Clouds</span></h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-10 text-center">
+					<p>Lorem ipsum dolor sit amet, an natum audire nec. Ne modus fabulas sit. No persecuti quaerendum has. Cu vis purto exerci alienum, qui an qualisque percipituradversarium.</p>
+					<p class="subtitle pt-3">Ne modus fabulas sit.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- footer (incl get-in-touch) -->
-    <footer class="main-footer">
-      <div class="container-xl">
-        <div class="row main-footer-title">
-          <div class="col text-center">
-            <h2>Get in touch</h2>
-            <p class="contact-subtitle">Have a question or feedback? Send us a message!</p>
-          </div>
-        </div>
-        <!-- contact form -->
-        <div class="row">
-          <div class="col get-in-touch mx-auto mt-5">
-            <div class="contact-form">
-              <form id="contact-form">
-                <div class="row mb-4 contact-row contact-name-row">
-                  <div class="col">
-                    <input id="fullName" type="text" name="fullName" class="form-control" placeholder="Full Name" required>
-                  </div>
-                </div>
-                <div class="row mb-4 contact-row contact-tel-row">
-                  <div class="col">
-                    <input id="email" type="email" name="email" class="form-control" placeholder="E-mail" required>
-                  </div>
-                </div>
-                <div class="row mb-4 contact-row contact-tel-row">
-                  <div class="col">
-                    <input id="phoneNumber" type="tel" name="phoneNumber" class="form-control" placeholder="Phone Number">
-                  </div>
-                </div>
-                <div class="row mb-4 contact-row contact-text-row">
-                  <div class="col">
-                    <textarea id="message" name="message" class="form-control contact-row contact-textarea" placeholder="Message" required></textarea>
-                  </div>
-                </div>
-                <div class="row mb-4 pt-3 contact-row contact-button-row">
-                  <div class="col text-center">
-                    <button type="submit" class="btn btn-contact">Get in touch</button>
-                    <p id="confirmMessage" style="display: none;" class="text-success mt-5">Thank you for your interest, we will get back to you soon.</p>
-                    <p id="errorMessage" style="display: none;" class="text-danger mt-5">An error occurred. Try again later.</p>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!-- footer widgets -->
-        <div class="row footer-widgets">
-          <div class="col-12 col-md-4">
-            <div class="widget widget-left pr-0 pr-md-4 pl-0 pl-sm-5 pl-md-0">
-              <div class="logo-footer mb-3">
-                <img src="img/logo.png" alt="Logo">
-              </div>
-              <h4 class="widget-title">Save On Clouds</h4>
-              <p class="widget-par mb-0">P.O.BOX 575</p>
-              <p class="widget-par mb-0">Broadway, NSW, 2007</p>
-              <p class="widget-par mb-0">Australia</p>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="widget widget-center pt-4 pt-md-5">
-              <ul class="widget-list pl-0 pl-sm-5">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="https://saveoncloudsblog.cloud" target="_blank">Documentation</a></li>
-                <li><a href="#">FAQs</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="row">
-              <div class="col-12">
-                <div class="widget widget-right pt-4 pt-md-5">
-                  <h4 class="widget-title">Our phones</h4>
-                  <p class="widget-par mb-0">United States +13423434</p>
-                  <p class="widget-par mb-0">United Kingdom +4434234234</p>
-                  <p class="widget-par mb-0">Australia +61434243</p>
-                </div>
-              </div>
-              <div class="col-12 pt-4">
-                <div class="widget widget-right">
-                  <h4 class="widget-title">Our mail</h4>
-                  <ul class="widget-list">
-                    <li><a href="mailto:info@saveonclouds.com">info@saveonclouds.com</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row copyright mt-4 mt-md-0">
-          <div class="col">
-            <p>Copyright 2020 Save On Clouds by CloudWare Pty Ltd. | All Rights Reserved</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
+	<!-- features section -->
+	<div class="container-xl features">
+		<div class="row">
+			<div class="col-sm-6 col-md-4 text-center">
+				<div class="card align-items-center justify-content-center features-card">
+					<img src="img/features-icon-accounts.png" class="img-fluid" alt="Icon">
+					<h3>Unlimited cloud accounts</h3>
+					<div class="card-body">
+						<p class="card-text">Add as many AWS, Azure or Google Cloud accounts as you wish.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 text-center">
+				<div class="card align-items-center justify-content-center features-card">
+					<img src="img/features-icon-calendar.png" class="img-fluid" alt="Icon">
+					<h3>Your Schedule</h3>
+					<div class="card-body">
+						<p class="card-text">Switch your resources individually or collectively based on a schedule.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 text-center">
+				<div class="card align-items-center justify-content-center features-card">
+					<img src="img/features-icon-users.png" class="img-fluid" alt="Icon">
+					<h3>Unlimited users and groups</h3>
+					<div class="card-body">
+						<p class="card-text">Invite your colleagues to help you with managing your resources. There is no limit!</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 text-center">
+				<div class="card align-items-center justify-content-center features-card">
+					<img src="img/features-icon-optimisation.png" class="img-fluid" alt="Icon">
+					<h3>API</h3>
+					<div class="card-body">
+						<p class="card-text">You can manage your resources via our Restful APIs. The perfect solution for automation!</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 text-center">
+				<div class="card align-items-center justify-content-center features-card">
+					<img src="img/features-icon-notifications.png" class="img-fluid" alt="Icon">
+					<h3>Notifications</h3>
+					<div class="card-body">
+						<p class="card-text">Receive notifications via email, Microsoft Teams, Slack, PagerDuty etc when resource statuses change.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 text-center">
+				<div class="card align-items-center justify-content-center features-card">
+					<img src="img/features-icon-innovation.png" class="img-fluid" alt="Icon">
+					<h3>AI-driven recommendations</h3>
+					<div class="card-body">
+						<p class="card-text">AIPO stands for AI-Powered Optimization. It analyzes your resource utilization and optimizes your utilization windows.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(102574)</script> 
+	<!-- advantages section -->
+	<div class="container-xl advantages">
+		<div class="row">
+			<div class="col text-center">
+				<h2>Advantages</h2>
+			</div>
+		</div>
+		<div class="row mt-0 mt-lg-5">
+			<div class="col-sm-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
+				<div class="card align-items-center advantages-card">
+					<img src="img/advantages-icon-stripe.png" class="img-fluid mb-2" alt="Icon">
+					<h3>Powered by Stripe</h3>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
+				<div class="card align-items-center advantages-card">
+					<img src="img/advantages-icon-cloudflare.png" class="img-fluid mb-2" alt="Icon">
+					<h3>Secure by CloudFlare</h3>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
+				<div class="card align-items-center advantages-card">
+					<img src="img/advantages-icon-cost.png" class="img-fluid" alt="Icon">
+					<h3>Low Cost</h3>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
+				<div class="card align-items-center advantages-card">
+					<img src="img/advantages-icon-nolearning.png" class="img-fluid" alt="Icon">
+					<h3>No Learning Curve</h3>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <script src="js/CostCalculator.js"></script>
-    <script src="js/Contact.js"></script>
-    <script>
-      $(function () {
-        CostCalculator.Init('https://dev.saveonclouds.com.au');
+	<!-- how-it-works section -->
+	<div class="how-it-works">
+		<div class="container-xl">
+			<div class="row">
+				<div class="col text-center">
+					<h2>How It works</h2>
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-md-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
+					<div class="card align-items-center justify-content-end how-card">
+						<img src="img/how-it-works-icon-1.png" class="img-fluid mb-0 mb-lg-1" alt="Icon">
+						<h3><sup>01</sup>Add Account</h3>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
+					<div class="card align-items-center justify-content-end how-card">
+						<img src="img/how-it-works-icon-2.png" class="img-fluid mb-0 mb-lg-5" alt="Icon">
+						<h3><sup class="active">02</sup>Create Schedule</h3>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
+					<div class="card align-items-center justify-content-end how-card">
+						<img src="img/how-it-works-icon-3.png" class="img-fluid" alt="Icon">
+						<h3><sup>03</sup>Choose Cloud Resources</h3>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 text-center d-flex align-items-end justify-content-center">
+					<div class="card align-items-center justify-content-end how-card">
+						<img src="img/how-it-works-icon-4.png" class="img-fluid mb-0 mb-lg-3" alt="Icon">
+						<h3><sup>04</sup>Enjoy Savings</h3>
+					</div>
+				</div>
+			</div>
+			<div class="advantages-btn text-center">
+				<a href="https://portal.saveonclouds.com/Accounts/Signup" class="btn btn-lp btn-trial">Start Your 7-Day Free Trial</a>
+			</div>
+		</div>
+	</div>
 
-        Contact.Init('https://dev.saveonclouds.com.au');
-      });
-    </script>
+	<!-- prices section -->
+	<div class="container-xl prices">
+		<div class="row">
+			<div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-end">
+				<div class="card prices-card prices-trial-card">
+					<div class="card-body">
+						<h3 class="prices-title text-center">Free 7-Day Trial</h3>
+						<ul class="prices-list">
+							<li>Unlimited Cloud Accounts</li>
+							<li>Unlimited Cloud Resources</li>
+							<li>Unlimited Environments</li>
+							<li>Unlimited Schedules</li>
+							<li>Unlimited Users and Teams</li>
+							<li>Notifications Channels</li>
+							<li>License is valid for 7 days</li>
+						</ul>
+						<div class="prices-btn text-center">
+							<a href="https://portal.saveonclouds.com/Accounts/Signup" class="btn btn-lp btn-prices">Start Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start prices-business">
+				<div class="card prices-card prices-business-card">
+					<div class="card-body">
+						<h3 class="prices-title prices-business-title text-center">First Class</h3>
+						<ul class="prices-list">
+							<li>Unlimited Cloud Accounts</li>
+							<li>Unlimited Cloud Resources</li>
+							<li>Unlimited Environments</li>
+							<li>Unlimited Schedules</li>
+							<li>Unlimited Users and Teams</li>
+							<li>Notifications Channels</li>
+							<li>AI-Powered Optimization</li>
+						</ul>
+						<div class="prices-btn text-center">
+							<a href="https://portal.saveonclouds.com/Accounts/Signup" class="btn btn-lp btn-business-prices">
+								<span class="d-flex justify-content-center align-items-center">
+									<span class="prices-btn-left">$2.99</span>
+									<span class="d-flex flex-column align-items-start prices-btn-small">
+										<span>per instance</span>
+										<span>per month</span>
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  </body>
+	<!-- FAQs section -->
+	<div class="container-fluid faqs">
+		<div class="row">
+			<div class="col text-center">
+				<h2>Frequently Asked Questions</h2>
+			</div>
+		</div>
+		<div class="row mt-5">
+			<div class="col-lg-6 text-right d-none d-lg-block">
+				<img src="img/faqs-img.png" class="img-fluid" alt="Image">
+			</div>
+			<div class="col-lg-6 faqs-questions mx-auto mx-lg-0">
+				<div class="faqs-question mb-5">
+					<h3>What is a Cloud Resource?</h3>
+					<p>A Cloud Resource is a virtual machine such as AWS EC2, or a database such as Google Cloud SQL.</p>
+				</div>
+				<div class="faqs-question mb-5">
+					<h3>What is an Environment?</h3>
+					<p>An Environment is a collection of resources. For example, your "Shared Services" environment may include virtual machines and databases that are used by your CI/CD system.</p>
+				</div>
+				<div class="faqs-question mb-5">
+					<h3>What is a Schedule?</h3>
+					<p>A schedule is the set of parameters you set to determine when an individual resource or an environment (a collection of resources) must be turned on or off.</p>
+				</div>
+				<div class="faqs-question mb-5">
+					<h3>What is AIPO?</h3>
+					<p>AI-Powered Optimizer is our artificial intelligence robot. It analyzes your usage data and comes up with optimized schedules that can maximize your savings.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- comparison section -->
+	<div class="container-fluid comparison">
+		<div class="row">
+			<div class="col text-center">
+				<h2>Save On Clouds <span>vs.</span> Competitors</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col mx-auto comparison-table table-responsive">
+				<table class="table text-center table-borderless">
+					<thead>
+						<tr>
+							<th scope="col"><img src="img/logo.png" alt="Logo" class="comparison-logo img-fluid"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><img src="img/comparison-check.png" alt="Check"></td>
+							<td class="comparison-option">Option 1</td>
+							<td><img src="img/comparison-uncheck.png" alt="Check"></td>
+						</tr>
+						<tr>
+							<td><img src="img/comparison-check.png" alt="Check"></td>
+							<td class="comparison-option">Option 1</td>
+							<td><img src="img/comparison-uncheck.png" alt="Check"></td>
+						</tr>
+						<tr>
+							<td><img src="img/comparison-check.png" alt="Check"></td>
+							<td class="comparison-option">Option 1</td>
+							<td><img src="img/comparison-uncheck.png" alt="Check"></td>
+						</tr>
+						<tr>
+							<td><img src="img/comparison-check.png" alt="Check"></td>
+							<td class="comparison-option">Option 1</td>
+							<td><img src="img/comparison-uncheck.png" alt="Check"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- testimonials section -->
+	<div class="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h2>Testimonials</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div id="carousel-testimonials" class="carousel slide mx-auto mt-5" data-ride="carousel" data-interval="3000">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-testimonials" data-slide-to="1"></li>
+							<!-- <li data-target="#carousel-testimonials" data-slide-to="2"></li> -->
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="testimonials-item">
+									<div class="testimonials-image">
+										<img src="img/testimonials/Asbjorn.jpeg" class="img-fluid" alt="Image">
+										<p class="testimonials-name">Asbjorn Tonstad</p>
+										<p class="testimonials-position">Norway</p>
+									</div>
+									<div class="testimonials-content">
+										<p>Save On Clouds help us have full control on our AWS costs and optimize the utilization of our development and staging EC2 instances as well as SQL Server databases.</p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="testimonials-item">
+									<div class="testimonials-image">
+										<img src="img/testimonials/renaud.png" class="img-fluid" alt="Image">
+										<p class="testimonials-name">Rando Tomson</p>
+										<p class="testimonials-position">Estonia</p>
+									</div>
+									<div class="testimonials-content">
+										<p>We have reduced the cost of our large infrastructure on Google Cloud Platform from about <b>$60,000 per month to less than $40,000 per month, thanks to Save On Clouds.</b></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- calculator section -->
+	<div class="container-fluid calculator">
+		<div class="row">
+			<div class="col text-center">
+				<h2>Saving Calculator</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col calculator-inner mx-auto">
+				<div class="calc-form pl-2 pl-lg-0">
+					<form>
+						<div class="row align-items-center calc-row">
+							<div class="col-12 col-md-2 col-lg-auto col-auto my-2 my-lg-0">
+								<label>We have</label>
+							</div>
+							<div class="col-auto my-2 my-lg-0">
+								<input type="number" class="form-control calc-number" placeholder="1" min="0" value="1">
+							</div>
+							<div class="w-100 d-lg-none"></div>
+							<div class="col-12 col-md-3 col-lg-auto my-2 my-lg-0">
+								<label>instances on</label>
+							</div>
+							<div class="col-auto my-2 my-lg-0">
+								<select class="form-control calc-select-cloud">
+									<option value="1">AWS</option>
+									<option value="2">Azure</option>
+									<option value="3">Google Cloud</option>
+								</select>
+							</div>
+							<div class="col-auto my-2 my-lg-0">
+								<label>of</label>
+							</div>
+							<div class="col-auto my-2 my-lg-0">
+								<select class="form-control calc-select-os-type">
+									<option value="linux">Linux</option>
+									<option value="windows">Windows</option>
+								</select>
+							</div>
+							<div class="col-auto my-2 my-lg-0">
+								<select class="form-control calc-select-size">
+								</select>
+							</div>
+
+							<div class="col-auto my-2 my-lg-0">
+								<a href="#" class="btn btn-calc btn-calc-close">
+									<img src="img/icon-plus.png" class="img-fluid" alt="Close">
+								</a>
+							</div>
+						</div>
+						<div class="row align-items-center calc-row">
+							<div class="col-auto">
+								<a href="#" class="btn btn-calc btn-calc-add">
+									<img src="img/icon-plus.png" class="img-fluid" alt="Add">
+								</a>
+							</div>
+						</div>
+						<div class="row align-items-center calc-row calc-time">
+							<div class="col-12 col-lg-auto my-2 my-lg-0">
+								<label>We do use our environments from</label>
+							</div>
+							<div class="col-auto my-2 my-lg-0">
+								<select class="form-control calc-select-time start-time">
+								</select>
+							</div>
+							<div class="col-auto my-2 my-lg-0">
+								<label>to</label>
+							</div>
+							<div class="col-auto my-2 my-lg-0">
+								<select class="form-control calc-select-time stop-time">
+								</select>
+							</div>
+						</div>
+						<div class="row align-items-center calc-row calc-saving">
+							<div class="col-8 saving-title">
+								<p class="saving-title-content">Your <span>monthly saving</span> is around</p>
+							</div>
+							<div class="col-4 saving-amount pl-0">
+								<p class="saving-amount-content">$0</p>
+							</div>
+						</div>
+					</form>
+					<div id="calc-loader"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer (incl get-in-touch) -->
+	<footer class="main-footer">
+		<div class="container-xl">
+			<div class="row main-footer-title">
+				<div class="col text-center">
+					<h2>Get in touch</h2>
+					<p class="contact-subtitle">Have a question or feedback? Send us a message!</p>
+				</div>
+			</div>
+			<!-- contact form -->
+			<div class="row">
+				<div class="col get-in-touch mx-auto mt-5">
+					<div class="contact-form">
+						<form id="contact-form">
+							<div class="row mb-4 contact-row contact-name-row">
+								<div class="col">
+									<input id="fullName" type="text" name="fullName" class="form-control" placeholder="Full Name" required>
+								</div>
+							</div>
+							<div class="row mb-4 contact-row contact-tel-row">
+								<div class="col">
+									<input id="email" type="email" name="email" class="form-control" placeholder="E-mail" required>
+								</div>
+							</div>
+							<div class="row mb-4 contact-row contact-tel-row">
+								<div class="col">
+									<input id="phoneNumber" type="tel" name="phoneNumber" class="form-control" placeholder="Phone Number">
+								</div>
+							</div>
+							<div class="row mb-4 contact-row contact-text-row">
+								<div class="col">
+									<textarea id="message" name="message" class="form-control contact-row contact-textarea" placeholder="Message" required></textarea>
+								</div>
+							</div>
+							<div class="row mb-4 pt-3 contact-row contact-button-row">
+								<div class="col text-center">
+									<button type="submit" class="btn btn-contact">Get in touch</button>
+									<p id="confirmMessage" style="display: none;" class="text-success mt-5">Thank you for your interest, we will get back to you soon.</p>
+									<p id="errorMessage" style="display: none;" class="text-danger mt-5">An error occurred. Try again later.</p>
+									<p class="grecaptcha-policy">
+									  This site is protected by reCAPTCHA and the Google
+									  <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+									  <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+									</p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- footer widgets -->
+			<div class="row footer-widgets">
+				<div class="col-12 col-md-4">
+					<div class="widget widget-left pr-0 pr-md-4 pl-0 pl-sm-5 pl-md-0">
+						<div class="logo-footer mb-3">
+							<img src="img/logo.png" alt="Logo">
+						</div>
+						<h4 class="widget-title">Save On Clouds</h4>
+						<p class="widget-par mb-0">P.O.BOX 575</p>
+						<p class="widget-par mb-0">Broadway, NSW, 2007</p>
+						<p class="widget-par mb-0">Australia</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="widget widget-center pt-4 pt-md-5">
+						<ul class="widget-list pl-0 pl-sm-5">
+							<li><a href="https://portal.saveonclouds.com/Home/Terms">Terms & Conditions</a></li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="https://info.saveonclouds.com" target="_blank">Documentation</a></li>
+							<li><a href="https://portal.saveonclouds.com/developers" target="_blank">Developers</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="row">
+						<div class="col-12">
+							<div class="widget widget-right pt-4 pt-md-5">
+								<h4 class="widget-title">Our phones</h4>
+								<p class="widget-par mb-0">United States +141 522 34480</p>
+								<p class="widget-par mb-0">United Kingdom +44 738 0357 450</p>
+								<p class="widget-par mb-0">Australia +61 2 8005 6733</p>
+							</div>
+						</div>
+						<div class="col-12 pt-4">
+							<div class="widget widget-right">
+								<h4 class="widget-title">Our mail</h4>
+								<ul class="widget-list">
+									<li><a href="mailto:info@saveonclouds.com">info@saveonclouds.com</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row copyright mt-4 mt-md-0">
+				<div class="col">
+					<p>Copyright 2020 Save On Clouds by CloudWare Pty Ltd. | All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://account.snatchbot.me/script.js"></script>
+
+	<script src="js/CostCalculator.js"></script>
+	<script src="js/Contact.js"></script>
+
+	<script src="https://account.snatchbot.me/script.js"></script> 
+
+	<script>
+		$(function () {
+			CostCalculator.Init('https://portal.saveonclouds.com');
+
+			Contact.Init('https://portal.saveonclouds.com');
+
+			window.sntchChat.Init(102574);
+		});
+	</script>
+
+</body>
 </html>

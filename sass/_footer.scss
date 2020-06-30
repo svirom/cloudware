@@ -131,3 +131,10 @@
     color: rgba($main-color, 0.5);
   }
 }
+
+.grecaptcha-policy { 
+  font-size: x-small; 
+  padding-top: 0.75rem;
+}
+
+.grecaptcha-badge { visibility: hidden; }

@@ -1,10 +1,13 @@
 /* hero section */
 .hero-section {
   position: relative;
-  padding-bottom: 5rem;
+  // padding-bottom: 5rem;
 
   .carousel {
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EFF2F4;
+  }
+  .carousel-inner {
+    overflow: visible;
   }
   .carousel-item {
     height: 600px;
@@ -14,8 +17,14 @@
     }
   }
   .carousel-item-content {
+    position: relative;
     height: 100%;
     padding: 5rem 1.25rem 0;
+    z-index: 1;
+
+    @include respond-to('sm') {
+      padding-top: 3rem;
+    }
 
     h1 {
       max-width: 680px;
@@ -36,7 +45,7 @@
     }
   }
   .carousel-indicators {
-    bottom: -10px;
+    bottom: -11px;
 
     li {
       display: inline-block;
@@ -46,7 +55,7 @@
       margin-right: 6px;
       border-radius: 50%;
       border: 1px solid $main-color;
-      box-shadow: -8px -8px 20px #FFFFFF, 8px 8px 20px #D1D9E6;
+      // box-shadow: -8px -8px 20px #FFFFFF, 8px 8px 20px #D1D9E6;
       opacity: 1;
       vertical-align: middle;
 
@@ -60,9 +69,20 @@
       }
     }
   }
+  .hero-h2 {
+    font-weight: 200;
+
+    span {
+      font-weight: 500;
+    }
+  }
 }
 .hero-list {
   margin-bottom: 3.75rem;
+
+  @include respond-to('sm') {
+    margin-bottom: 2.75rem;
+  }
 
   li {
     margin-left: 1.625rem;
@@ -79,8 +99,52 @@
 
   @include respond-to('sm') {
     margin-top: 1.25rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  }
+}
+.hero-card {
+  &.hero-card-amazon {
+    padding: 1rem 1.5rem;
+
+    @include respond-to('md') {
+      padding: 0.5rem 0.5rem;
+    }
+    @include respond-to('sm') {
+      padding: 0.5rem 0;
+    }
+  }
+  &.hero-card-azure {
+    padding: 1rem 2.5rem;
+
+    @include respond-to('sm') {
+      padding: 1rem 1.5rem;
+    }
+  }
+  &.hero-card-googlecloud {
+    padding: 1rem 1.5rem;
+
+    @include respond-to('sm') {
+      padding: 1rem 0.5rem;
+    }
+  }
+}
+.hero-card-text {
+  p {
+    margin-bottom: 0;
+    font-size: 0.9375rem;
+    line-height: 1.3333;
+
+    @include respond-to('sm') {
+      font-size: 0.75rem;
+    }
+  }
+}
+.hero-card-img {
+  height: 6rem;
+
+  @include respond-to('md') {
+    height: 5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 .hero-images {
@@ -97,8 +161,25 @@
     left: 0;
     bottom: 3.25rem;
 
+    &.hero-image-azure {
+      left: 2rem;
+    }
+    &.hero-image-googlecloud {
+      left: 2rem;
+    }
+
     @include respond-to('xl') {
       width: 25%;
+
+      &.hero-image-amazon {
+        width: auto;
+      }
+      &.hero-image-azure {
+        width: auto;
+      }
+      &.hero-image-googlecloud {
+        width: auto;
+      }
     }
     @include respond-to('md') {
       display: none;
@@ -110,6 +191,16 @@
 
     @include respond-to('xl') {
       width: 45%;
+
+      &.hero-image-amazon {
+        width: 30%;
+      }
+      &.hero-image-azure {
+        width: 30%;
+      }
+      &.hero-image-googlecloud {
+        width: 30%;
+      }
     }
     @include respond-to('md') {
       display: none;

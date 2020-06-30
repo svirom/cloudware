@@ -1,0 +1,92 @@
+/* comparison section */
+.comparison {
+  padding-top: 4.5rem;
+  padding-bottom: 14rem;
+
+  @include respond-to('xl') {
+    padding-top: 1.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  h2 {
+    span {
+      font-weight: 400;
+    }
+  }
+}
+.comparison-table {
+  position: relative;
+  max-width: 768px;
+  overflow-x: visible;
+
+  &::before {
+    position: absolute;
+    content: url('../img/comparison-img-left.png');
+    bottom: -170px;
+    left: -248px;
+
+    @include respond-to('xl') {
+      display: none;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: url('../img/comparison-img-right.png');
+    bottom: -170px;
+    right: -312px;;
+
+    @include respond-to('xl') {
+      display: none;
+    }
+  }
+
+  .table, table {
+    @include font(1.25rem, 500, 1.2);
+    color: $main-color;
+    text-transform: uppercase;
+    border-collapse: separate; 
+    border-spacing: 0 1.3125rem;
+
+    @include respond-to('md') {
+      font-size: 1rem;
+    }
+    
+    th {
+      width: 33.33333%;
+      padding: 0.25rem 0.75rem;
+
+      @include respond-to('md') {
+        width: 60%;
+
+        &:first-child,
+        &:last-child {
+          width: 20%;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border-radius: 5px;
+        background: linear-gradient(0deg, #EFF2F4, #EFF2F4);
+
+        td {
+          vertical-align: middle;
+
+          &:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
+          &:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .comparison-logo {
+    max-width: 3.1875rem;
+  }
+}

@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -22,7 +22,7 @@
     <header class="container-xl main-header">
       <div class="row">
         <nav class="col navbar navbar-expand-xl px-xl-0">
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand" href="index.html">
             <img src="img/logo.png" alt="Logo">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,26 +30,24 @@
           </button>
         
           <div class="collapse navbar-collapse" id="main-menu">
-            <ul class="navbar-nav ml-auto header-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Terms & Conditions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://saveoncloudsblog.cloud/?p=27" target="_blank">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Documentation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQs</a>
-              </li>
-            </ul>
+              <ul class="navbar-nav ml-auto header-nav">
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://portal.saveonclouds.com/Home/Terms">Terms & Conditions</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://info.saveonclouds.com" target="_blank">Documentation</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://portal.saveonclouds.com/Home/Privacy" target="_blank">Privacy Policy</a>
+                  </li>
+              </ul>
             <div class="navbar-login ml-4 my-4 my-xl-0">
-              <a href="#" class="btn btn-lp mr-4">Sign Up</a>
-              <a href="#" class="btn btn-link">Login</a>
+              <a href="https://portal.saveonclouds.com/Accounts/Signup" class="btn btn-lp mr-4">Sign Up</a>
+              <a href="https://portal.saveonclouds.com/Accounts/SignIn" class="btn btn-link">Login</a>
             </div>
           </div>
         </nav>
@@ -85,7 +83,7 @@
                   <li>Licence is valid for 7 days</li>
                 </ul>
                 <div class="prices-btn text-center">
-                  <a href="#" class="btn btn-lp btn-prices">Start Now</a>
+                  <a href="https://portal.saveonclouds.com/Accounts/Signup" class="btn btn-lp btn-prices">Start Now</a>
                 </div>
               </div>
             </div>
@@ -105,7 +103,7 @@
                   <li>AI-Powered Optimization</li>                 
                 </ul>
                 <div class="prices-btn text-center">
-                  <a href="#" class="btn btn-lp btn-business-prices">
+                  <a href="https://portal.saveonclouds.com/Accounts/Signup" class="btn btn-lp btn-business-prices">
                     <span class="d-flex justify-content-center align-items-center">
                       <span class="prices-btn-left">$2.99</span>
                       <span class="d-flex flex-column align-items-start prices-btn-small">
@@ -129,45 +127,46 @@
             <p class="pricing-bold">When working on the pricing model for Save On Clouds services we had several things in mind:</p>
             <ul class="prices-list">
               <li>Simple pricing model</li>
-              <li>No hidden costs for the customers</li>
+              <li>No hidden costs for the customer</li>
               <li>Affordable cost</li>
-              <li>Real savings for the end-users</li>
+              <li>Real savings for the end-user</li>
             </ul>
-            <p>This is, in fact, one of the areas that we beat our competitors: We work on to bring you real savings and not move the money you save on your cloud costs into our own bank account!</p>
-            <p>Not only we offer a very simple pricing model but also we try to change our paying customers as low as possible. Especially that we do not charge for how many users and teams you want to have. We do not even charge our clients for the number of cloud accounts e.g. AWS accounts, that they add to the system!</p>
-            <p>Basically, we only offer one price tier! And that price is cheap!</p>
-            <p>Once a user signs up, they can create as many users, groups and environments as they wish. They can also add as many cloud accounts as they would like to. We currently support Amazon Web Services, Google Cloud and Microsoft Azure.</p>
+            <p>This is, where we beat our competitors: We work to bring you real savings and not move the money you save on your cloud costs into our bank account!</p>
+            <p>
+              We don’t just offer a straightforward pricing model; we keep our prices as low as possible. The price stays the same no matter how many users and teams you want to have. On top of that, you can add as many could accounts as you like to the system at no extra cost.
+            </p>
+            <p>Once you sign up, you can create as many users, groups and environments as you wish. You can also add as many cloud accounts as you like. We currently support Amazon Web Services, Google Cloud and Microsoft Azure.</p>
             <p class="pricing-bold mt-4">The system will manage these resources:</p>
             <ul class="prices-list">
               <li>Virtual Machines e.g. AWS EC2</li>
               <li>Databases e.g. Google Cloud SQL Service</li>
               <li>Scaling Groups e.g. AWS Auto Scaling Groups</li>
             </ul>
-            <p>Each database instance is 1 instance. No matter how many databases you have within the instance.</p>
+            <p>Each database instance is one instance. No matter how many databases you have within the instance.</p>
             <p>Likewise, each virtual machine that is not part of a scaling group (or managed instance group as Google calls it) is also counted as 1 instance.</p>
             <p>However, we do not count the instances that have been launched by a scaling group.</p>
             <p class="pricing-bold mt-4">Please consider this scenario:</p>
             <ul class="prices-list">
               <li>You have one Auto Scaling Group in AWS</li>
-              <li>This Auto Scaling Group is set to have 5 instances.</li>
+              <li>This Auto Scaling Group is set to have five instances.</li>
               <li>At the end of each day, this ASG is set to 0 by Cloud Services and instances are terminated.</li>
               <li>Over a period of a month, you have launched and terminated 150 instances!</li>
             </ul>
             <p>In this scenario, will not charge you for 150 instances. Instead, we use this formula:</p>
             <p>We find the maximum number of instances that have ever been launched by the auto-scaling group. In this case, it is 5.</p>
             <p>We will charge you for only five instances and not 150 instances!</p>
-            <p>Each instance stop/termination will cost the end-users USD 2.99.</p>
+            <p>Each unique instance will cost the end-user $2.99 per month.</p>
             <p>This is by far cheaper than any other competitors.</p>
             <p class="pricing-bold mt-4">If you have 5 instances, your metered cost will be:</p>
             <ul class="prices-list">
               <li>2.99 * 5 = USD 14.95</li>
             </ul>
-            <p class="pricing-bold">This amount is exclusive of tax. The total billed amount will include 10% VAT as well. So your final monthly bill will be:</p>
+            <p class="pricing-bold">This amount is exclusive of tax. The total billed amount will include 10% VAT as well. So, your final monthly bill will be:</p>
             <ul class="prices-list">
               <li>USD 16.50 (Sixteen dollars and fifty cents).</li>
             </ul>
-            <p>Save On Clouds comes with 7 days of free trialling. When your trial period ends we will not remove any of your created groups, users, environments etc. This will enable you to activate your premium membership at any time without having to re-create everything again.</p>
-            <p>Billing occurs every 30 days after your trial membership ends. For example, if you sign up on the 1st of January, your trial membership will end on 8 of January. Then 30 days after, which is 7th February, we will charged your on-file credit card.</p>
+            <p>Save On Clouds comes with seven days of free trialling. When your trial period ends we will not remove any of your created groups, users, environments etc. This will enable you to activate your premium membership at any time without having to re-create everything again.</p>
+            <p>Billing occurs every 30 days after your trial membership ends. For example, if you sign up on 1st January, your trial membership will end on 8th January. Then 30 days after, which is 7th February, we will charge your on-file credit card.</p>
             <p>Once you are billed, you will receive an invoice via your registered email address. Invoices include details of how your usage has been metered.</p>
             <p>If you have any questions regarding the billing, please write to us. Our email address is <a href="mailto:info@saveonclouds.com">info@saveonclouds.com</a>.</p>
           </div>
@@ -197,11 +196,9 @@
           <div class="col-12 col-sm-6 col-md-4">
             <div class="widget widget-center pt-4 pt-md-5">
               <ul class="widget-list pl-0 pl-sm-5">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="https://portal.saveonclouds.com/Home/Terms">Terms & Conditions</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="https://info.saveonclouds.com/" target="_blank">Documentation</a></li>
               </ul>
             </div>
           </div>
@@ -210,14 +207,14 @@
               <div class="col-12">
                 <div class="widget widget-right pt-4 pt-md-5">
                   <h4 class="widget-title">Our phones</h4>
-                  <p class="widget-par mb-0">United States +13423434</p>
-                  <p class="widget-par mb-0">United Kingdom +4434234234</p>
-                  <p class="widget-par mb-0">Australia +61434243</p>
+                  <p class="widget-par mb-0">United States +141 522 34480</p>
+                  <p class="widget-par mb-0">United Kingdom  +44 738 0357 450</p>
+                  <p class="widget-par mb-0">Australia +61 2 8005 6733</p>
                 </div>
               </div>
               <div class="col-12 pt-4">
                 <div class="widget widget-right">
-                  <h4 class="widget-title">Our mail</h4>
+                  <h4 class="widget-title">Our e-mail</h4>
                   <ul class="widget-list">
                     <li><a href="mailto:info@saveonclouds.com">info@saveonclouds.com</a></li>
                   </ul>

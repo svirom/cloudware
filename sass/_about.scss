@@ -1,0 +1,26 @@
+/* about section */
+.about {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  color: #fff;
+  background: #1B2A45;
+
+  h2 {
+    color: $btn-color;
+
+    span {
+      font-size: 1.875rem;
+      font-weight: 300;
+      color: #fff;
+    }
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
